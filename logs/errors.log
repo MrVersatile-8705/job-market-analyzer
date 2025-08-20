@@ -1,0 +1,26 @@
+2025-08-20 19:02:30 | ERROR    | __main__:test_indeed_scraper:53 - Test failed: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00BBA813+48355]
+	(No symbol) [0x00B4C4B1]
+	(No symbol) [0x00A55358]
+	(No symbol) [0x00A71A9E]
+	(No symbol) [0x00A70579]
+	(No symbol) [0x00AA0C55]
+	(No symbol) [0x00AA093C]
+	(No symbol) [0x00A9A536]
+	(No symbol) [0x00A782DC]
+	(No symbol) [0x00A793DD]
+	GetHandleVerifier [0x00E1AABD+2539405]
+	GetHandleVerifier [0x00E5A78F+2800735]
+	GetHandleVerifier [0x00E5456C+2775612]
+	GetHandleVerifier [0x00C451E0+616112]
+	(No symbol) [0x00B55F8C]
+	(No symbol) [0x00B52328]
+	(No symbol) [0x00B5240B]
+	(No symbol) [0x00B44FF7]
+	BaseThreadInitThunk [0x75BF5D49+25]
+	RtlInitializeExceptionChain [0x76F9D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x76F9D661+561]
+
+2025-08-20 19:08:29 | ERROR    | data_collection.base_scraper:make_request:139 - Failed to fetch https://www.indeed.com/viewjob?jk=070a300362b66166 after 4 attempts

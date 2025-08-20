@@ -7,14 +7,33 @@ from dataclasses import dataclass
 from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
+from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 from loguru import logger
 
-from ...config.settings import settings
+# Import settings - will work when run from the project directory
+try:
+    # Try different import paths based on how the script is being executed
+    try:
+        from ...config.settings import settings  # When executed as part of the package
+    except ImportError:
+        try:
+            from ..config.settings import settings  # If config is one level up
+        except ImportError:
+            # Try absolute import
+            from config.settings import settings
+except ImportError:
+    # Fallback for when imports don't work
+    class MockSettings:
+        scraping_delay_min = 1
+        scraping_delay_max = 3
+        max_retries = 3
+    settings = MockSettings()
 
 @dataclass
 class JobPosting:
@@ -84,7 +103,9 @@ class BaseScraper(ABC):
         # Add user agent
         chrome_options.add_argument(f"--user-agent={self.session.headers['User-Agent']}")
         
-        driver = webdriver.Chrome(options=chrome_options)
+        # Use webdriver-manager to automatically handle ChromeDriver
+        service = Service(ChromeDriverManager().install())
+        driver = webdriver.Chrome(service=service, options=chrome_options)
         driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
         
         self.driver = driver

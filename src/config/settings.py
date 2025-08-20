@@ -41,11 +41,11 @@ class Settings:
         self.logs_dir = self.project_root / "logs"
         
         # Create directories if they don't exist
-        self.data_dir.mkdir(exist_ok=True)
-        self.logs_dir.mkdir(exist_ok=True)
-        (self.data_dir / "raw").mkdir(exist_ok=True)
-        (self.data_dir / "processed").mkdir(exist_ok=True)
-        (self.data_dir / "results").mkdir(exist_ok=True)
+        self.data_dir.mkdir(parents=True, exist_ok=True)
+        self.logs_dir.mkdir(parents=True, exist_ok=True)
+        (self.data_dir / "raw").mkdir(parents=True, exist_ok=True)
+        (self.data_dir / "processed").mkdir(parents=True, exist_ok=True)
+        (self.data_dir / "results").mkdir(parents=True, exist_ok=True)
 
 # Global settings instance
 settings = Settings()
