@@ -40,6 +40,24 @@ class AngelListScraper:
         with open(filename, 'w') as f:
             json.dump(self.job_listings, f, indent=4)
 
+def scrape_angellist(num_pages=3):
+    """
+    Convenience function to scrape AngelList jobs and return list of job dictionaries
+    
+    Args:
+        num_pages (int): Number of pages to scrape
+        
+    Returns:
+        list: List of job dictionaries
+    """
+    scraper = AngelListScraper()
+    try:
+        scraper.scrape_jobs(num_pages=num_pages)
+        return scraper.job_listings
+    except Exception as e:
+        print(f"Error scraping AngelList: {e}")
+        return []
+
 if __name__ == "__main__":
     scraper = AngelListScraper()
     scraper.scrape_jobs(num_pages=5)  # Adjust the number of pages as needed

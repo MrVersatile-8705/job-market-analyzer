@@ -40,8 +40,32 @@ class IndeedScraper:
     def to_dataframe(self):
         return pd.DataFrame(self.job_data)
 
+# Convenience function for main.py integration
+def scrape_indeed(job_title='Data Analyst', location='New York', num_jobs=50):
+    """
+    Convenience function to scrape Indeed jobs and return list of job dictionaries
+    
+    Args:
+        job_title (str): Job title to search for
+        location (str): Location to search in
+        num_jobs (int): Number of jobs to scrape
+        
+    Returns:
+        list: List of job dictionaries
+    """
+    scraper = IndeedScraper(job_title=job_title, location=location, num_jobs=num_jobs)
+    try:
+        scraper.scrape()
+        return scraper.job_data
+    except Exception as e:
+        print(f"Error scraping Indeed: {e}")
+        return []
+
 # Example usage:
 # scraper = IndeedScraper(job_title='Data Analyst', location='New York', num_jobs=100)
 # scraper.scrape()
 # df = scraper.to_dataframe()
 # print(df.head())
+
+# Or use the convenience function:
+# jobs = scrape_indeed('Data Analyst', 'New York', 50)

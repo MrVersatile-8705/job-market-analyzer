@@ -1,3 +1,17 @@
+def validate_data(job_data_list):
+    """
+    Validates a list of job data entries - alias for validate_job_data_list.
+    This function is used by main.py for data validation.
+
+    Parameters:
+    job_data_list (list): A list of dictionaries containing job data to validate.
+
+    Returns:
+    list: A list of valid job data entries.
+    """
+    return validate_job_data_list(job_data_list)
+
+
 def validate_job_data(job_data):
     """
     Validates the scraped job data to ensure it meets quality standards.

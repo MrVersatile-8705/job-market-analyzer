@@ -53,6 +53,26 @@ class GlassdoorScraper:
         df = self.get_job_listings()
         df.to_csv(filename, index=False)
 
+def scrape_glassdoor(job_title="Data Analyst", location="New York, NY", num_jobs=50):
+    """
+    Convenience function to scrape Glassdoor jobs and return list of job dictionaries
+    
+    Args:
+        job_title (str): Job title to search for
+        location (str): Location to search in
+        num_jobs (int): Number of jobs to scrape
+        
+    Returns:
+        list: List of job dictionaries
+    """
+    scraper = GlassdoorScraper(job_title=job_title, location=location, num_jobs=num_jobs)
+    try:
+        df = scraper.get_job_listings()
+        return df.to_dict('records')  # Convert DataFrame to list of dictionaries
+    except Exception as e:
+        print(f"Error scraping Glassdoor: {e}")
+        return []
+
 # Example usage:
 # scraper = GlassdoorScraper(job_title="Data Analyst", location="New York, NY", num_jobs=100)
 # scraper.save_to_csv("glassdoor_jobs.csv")

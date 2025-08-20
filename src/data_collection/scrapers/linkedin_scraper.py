@@ -47,6 +47,25 @@ class LinkedInScraper:
         with open(filename, 'w') as f:
             json.dump(job_listings, f, indent=4)
 
+def scrape_linkedin(job_title="Data Analyst", location="United States", num_jobs=50):
+    """
+    Convenience function to scrape LinkedIn jobs and return list of job dictionaries
+    
+    Args:
+        job_title (str): Job title to search for
+        location (str): Location to search in
+        num_jobs (int): Number of jobs to scrape
+        
+    Returns:
+        list: List of job dictionaries
+    """
+    scraper = LinkedInScraper(job_title=job_title, location=location, num_jobs=num_jobs)
+    try:
+        return scraper.get_job_listings()
+    except Exception as e:
+        print(f"Error scraping LinkedIn: {e}")
+        return []
+
 if __name__ == "__main__":
     scraper = LinkedInScraper(job_title="Data Analyst", location="United States", num_jobs=100)
     jobs = scraper.get_job_listings()
