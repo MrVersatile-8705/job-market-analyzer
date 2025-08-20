@@ -1,30 +1,51 @@
-# settings.py
-
 import os
+from pathlib import Path
+from typing import Optional
+from dotenv import load_dotenv
 
-# Base directory of the project
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Load environment variables
+load_dotenv()
 
-# Data directories
-RAW_DATA_DIR = os.path.join(BASE_DIR, 'data', 'raw')
-PROCESSED_DATA_DIR = os.path.join(BASE_DIR, 'data', 'processed')
-RESULTS_DIR = os.path.join(BASE_DIR, 'data', 'results')
+class Settings:
+    """Application settings and configuration."""
+    
+    def __init__(self):
+        # Database settings
+        self.database_url = os.getenv("DATABASE_URL", "sqlite:///data/job_market_dev.db")
+        self.database_url_dev = os.getenv("DATABASE_URL_DEV", "sqlite:///data/job_market_dev.db")
+        
+        # API Keys
+        self.openai_api_key = os.getenv("OPENAI_API_KEY")
+        self.anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
+        
+        # Scraping settings
+        self.scraping_delay_min = int(os.getenv("SCRAPING_DELAY_MIN", "1"))
+        self.scraping_delay_max = int(os.getenv("SCRAPING_DELAY_MAX", "3"))
+        self.max_retries = int(os.getenv("MAX_RETRIES", "3"))
+        self.use_proxy = os.getenv("USE_PROXY", "false").lower() == "true"
+        
+        # Application settings
+        self.log_level = os.getenv("LOG_LEVEL", "INFO")
+        self.debug_mode = os.getenv("DEBUG_MODE", "true").lower() == "true"
+        self.max_workers = int(os.getenv("MAX_WORKERS", "4"))
+        
+        # Rate limiting
+        self.requests_per_minute = int(os.getenv("REQUESTS_PER_MINUTE", "30"))
+        self.linkedin_rate_limit = int(os.getenv("LINKEDIN_RATE_LIMIT", "10"))
+        self.indeed_rate_limit = int(os.getenv("INDEED_RATE_LIMIT", "20"))
+        self.glassdoor_rate_limit = int(os.getenv("GLASSDOOR_RATE_LIMIT", "15"))
+        
+        # Project paths
+        self.project_root = Path(__file__).parent.parent.parent
+        self.data_dir = self.project_root / "data"
+        self.logs_dir = self.project_root / "logs"
+        
+        # Create directories if they don't exist
+        self.data_dir.mkdir(exist_ok=True)
+        self.logs_dir.mkdir(exist_ok=True)
+        (self.data_dir / "raw").mkdir(exist_ok=True)
+        (self.data_dir / "processed").mkdir(exist_ok=True)
+        (self.data_dir / "results").mkdir(exist_ok=True)
 
-# API settings
-API_TIMEOUT = 30  # seconds
-MAX_RETRIES = 5
-
-# Logging settings
-LOGGING_LEVEL = 'INFO'
-LOGGING_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-
-# NLP settings
-NLP_MODEL = 'en_core_web_sm'  # Default NLP model to use
-
-# Cloud settings
-CLOUD_PROVIDER = 'AWS'  # Default cloud provider
-CLOUD_REGION = 'us-east-1'  # Default region for cloud services
-
-# Other configurations
-ENABLE_CACHING = True
-CACHE_DIR = os.path.join(BASE_DIR, 'cache')
+# Global settings instance
+settings = Settings()
