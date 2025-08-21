@@ -23,8 +23,15 @@ class IndeedScraper(BaseScraper):
         super().__init__("Indeed", "https://www.indeed.com")
         self.search_url = f"{self.base_url}/jobs"
     
-    def search_jobs(self, keywords: List[str], location: str = "", limit: int = 100) -> List[str]:
-        """Search for jobs on Indeed and return job URLs."""
+    def search_jobs(self, keywords: List[str], location: str = "", limit: int = 100, days_back: Optional[int] = None) -> List[str]:
+        """Search for jobs on Indeed and return job URLs.
+        
+        Args:
+            keywords: List of keywords to search for
+            location: Location to search in
+            limit: Maximum number of job URLs to return
+            days_back: Number of days to look back (optional, default: no time filter)
+        """
         job_urls = []
         query = " OR ".join(keywords)
         
@@ -34,13 +41,17 @@ class IndeedScraper(BaseScraper):
         try:
             page = 0
             while len(job_urls) < limit:
-                # Build search URL
+                # Build search URL with optional date filter
                 search_params = {
                     'q': query,
                     'l': location,
                     'start': page * 10,
                     'sort': 'date'  # Sort by most recent
                 }
+                
+                # Add date filter if specified
+                if days_back is not None:
+                    search_params['fromage'] = str(days_back)  # Filter by days back (Indeed parameter)
                 
                 url = f"{self.search_url}?" + "&".join([f"{k}={quote_plus(str(v))}" for k, v in search_params.items()])
                 logger.info(f"Searching Indeed page {page + 1}: {url}")

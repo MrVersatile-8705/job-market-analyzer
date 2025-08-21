@@ -1,0 +1,216 @@
+2025-08-20 21:26:17 | INFO     | __main__:test_multi_scraper_system:47 - 🚀 Multi-Scraper Test with AI Integration
+2025-08-20 21:26:17 | INFO     | __main__:test_multi_scraper_system:48 - ============================================================
+2025-08-20 21:26:17 | INFO     | __main__:test_multi_scraper_system:55 - 🤖 AI Analysis: ENABLED
+2025-08-20 21:26:17 | INFO     | src.ai_analysis.job_analyzer:__init__:61 - OpenAI client initialized
+2025-08-20 21:26:17 | INFO     | __main__:test_multi_scraper_system:82 - 
+📊 Scenario 1: Remote Data Analyst Jobs
+2025-08-20 21:26:17 | INFO     | __main__:test_multi_scraper_system:83 - --------------------------------------------------
+2025-08-20 21:26:17 | INFO     | __main__:test_multi_scraper_system:87 - 🔍 Testing Indeed scraper...
+2025-08-20 21:26:17 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 21:26:23 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:26:23 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:46 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Data+Analyst+OR+Remote&l=&start=0&sort=date
+2025-08-20 21:26:30 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:79 - Found 16 jobs on page 1, total: 16
+2025-08-20 21:26:32 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:99 - Indeed search completed. Found 5 job URLs
+2025-08-20 21:26:32 | INFO     | __main__:test_multi_scraper_system:100 - ✅ Found 5 job URLs from Indeed
+2025-08-20 21:26:32 | INFO     | __main__:test_multi_scraper_system:103 - 📄 Extracting job details...
+2025-08-20 21:26:32 | INFO     | __main__:test_multi_scraper_system:107 -   Processing job 1/5
+2025-08-20 21:26:37 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:26:45 | INFO     | __main__:test_multi_scraper_system:129 -     🤖 Running AI analysis...
+2025-08-20 21:26:45 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:91 - Starting comprehensive analysis for: Remote AI Task Contributor – Work From Home (Flexible Hours) at ICAMP
+2025-08-20 21:26:47 | ERROR    | src.ai_analysis.openai_client:analyze_job_posting:97 - Error analyzing job posting with OpenAI: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your_ope************here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-08-20 21:26:47 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:100 - OpenAI analysis completed
+2025-08-20 21:26:47 | INFO     | __main__:test_multi_scraper_system:155 -     ✅ AI analysis complete (Quality: limited, Confidence: 0.00%)
+2025-08-20 21:26:47 | INFO     | __main__:test_multi_scraper_system:164 -     📋 Remote AI Task Contributor – Work From Home (Flexible Hours) at ICAMP
+2025-08-20 21:26:47 | INFO     | __main__:test_multi_scraper_system:168 -        🏠 Remote: Available
+2025-08-20 21:26:49 | INFO     | __main__:test_multi_scraper_system:107 -   Processing job 2/5
+2025-08-20 21:26:52 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:26:59 | INFO     | __main__:test_multi_scraper_system:129 -     🤖 Running AI analysis...
+2025-08-20 21:26:59 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:91 - Starting comprehensive analysis for: Data Analyst at Bluesight
+2025-08-20 21:26:59 | ERROR    | src.ai_analysis.openai_client:analyze_job_posting:97 - Error analyzing job posting with OpenAI: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your_ope************here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-08-20 21:26:59 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:100 - OpenAI analysis completed
+2025-08-20 21:26:59 | INFO     | __main__:test_multi_scraper_system:155 -     ✅ AI analysis complete (Quality: limited, Confidence: 0.00%)
+2025-08-20 21:26:59 | INFO     | __main__:test_multi_scraper_system:164 -     📋 Data Analyst at Bluesight
+2025-08-20 21:26:59 | INFO     | __main__:test_multi_scraper_system:168 -        🏠 Remote: Available
+2025-08-20 21:27:01 | INFO     | __main__:test_multi_scraper_system:107 -   Processing job 3/5
+2025-08-20 21:27:04 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:27:10 | INFO     | __main__:test_multi_scraper_system:129 -     🤖 Running AI analysis...
+2025-08-20 21:27:10 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:91 - Starting comprehensive analysis for: Database Administrator at Intone Networks
+2025-08-20 21:27:10 | ERROR    | src.ai_analysis.openai_client:analyze_job_posting:97 - Error analyzing job posting with OpenAI: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your_ope************here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-08-20 21:27:10 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:100 - OpenAI analysis completed
+2025-08-20 21:27:10 | INFO     | __main__:test_multi_scraper_system:155 -     ✅ AI analysis complete (Quality: limited, Confidence: 0.00%)
+2025-08-20 21:27:10 | INFO     | __main__:test_multi_scraper_system:164 -     📋 Database Administrator at Intone Networks
+2025-08-20 21:27:10 | INFO     | __main__:test_multi_scraper_system:168 -        🏠 Remote: Available
+2025-08-20 21:27:12 | INFO     | __main__:test_multi_scraper_system:107 -   Processing job 4/5
+2025-08-20 21:27:16 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:27:22 | INFO     | __main__:test_multi_scraper_system:129 -     🤖 Running AI analysis...
+2025-08-20 21:27:22 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:91 - Starting comprehensive analysis for: IFS Support Analyst at Future Vision 360 LLC
+2025-08-20 21:27:22 | ERROR    | src.ai_analysis.openai_client:analyze_job_posting:97 - Error analyzing job posting with OpenAI: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your_ope************here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-08-20 21:27:22 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:100 - OpenAI analysis completed
+2025-08-20 21:27:22 | INFO     | __main__:test_multi_scraper_system:155 -     ✅ AI analysis complete (Quality: limited, Confidence: 0.00%)
+2025-08-20 21:27:22 | INFO     | __main__:test_multi_scraper_system:164 -     📋 IFS Support Analyst at Future Vision 360 LLC
+2025-08-20 21:27:22 | INFO     | __main__:test_multi_scraper_system:168 -        🏠 Remote: Available
+2025-08-20 21:27:24 | INFO     | __main__:test_multi_scraper_system:107 -   Processing job 5/5
+2025-08-20 21:27:28 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:27:36 | INFO     | __main__:test_multi_scraper_system:129 -     🤖 Running AI analysis...
+2025-08-20 21:27:36 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:91 - Starting comprehensive analysis for: Senior Data Analyst at Cribl
+2025-08-20 21:27:36 | ERROR    | src.ai_analysis.openai_client:analyze_job_posting:97 - Error analyzing job posting with OpenAI: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your_ope************here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-08-20 21:27:36 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:100 - OpenAI analysis completed
+2025-08-20 21:27:36 | INFO     | __main__:test_multi_scraper_system:155 -     ✅ AI analysis complete (Quality: limited, Confidence: 0.00%)
+2025-08-20 21:27:36 | INFO     | __main__:test_multi_scraper_system:164 -     📋 Senior Data Analyst at Cribl
+2025-08-20 21:27:36 | INFO     | __main__:test_multi_scraper_system:168 -        🏠 Remote: Available
+2025-08-20 21:27:38 | INFO     | __main__:test_multi_scraper_system:178 - ✅ Scenario 1 completed: 5 jobs processed
+2025-08-20 21:27:38 | INFO     | __main__:test_multi_scraper_system:82 - 
+📊 Scenario 2: Business Intelligence - Major Cities
+2025-08-20 21:27:38 | INFO     | __main__:test_multi_scraper_system:83 - --------------------------------------------------
+2025-08-20 21:27:38 | INFO     | __main__:test_multi_scraper_system:87 - 🔍 Testing Indeed scraper...
+2025-08-20 21:27:38 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 21:27:43 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:27:43 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:46 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Business+Intelligence+OR+BI&l=New+York%2C+NY&start=0&sort=date
+2025-08-20 21:27:46 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:79 - Found 16 jobs on page 1, total: 16
+2025-08-20 21:27:49 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:99 - Indeed search completed. Found 3 job URLs
+2025-08-20 21:27:49 | INFO     | __main__:test_multi_scraper_system:100 - ✅ Found 3 job URLs from Indeed
+2025-08-20 21:27:49 | INFO     | __main__:test_multi_scraper_system:103 - 📄 Extracting job details...
+2025-08-20 21:27:49 | INFO     | __main__:test_multi_scraper_system:107 -   Processing job 1/3
+2025-08-20 21:27:53 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:28:00 | INFO     | __main__:test_multi_scraper_system:129 -     🤖 Running AI analysis...
+2025-08-20 21:28:00 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:91 - Starting comprehensive analysis for: Business Analyst, Amazon Fresh Grocery at Amazon.com Services LLC
+2025-08-20 21:28:00 | ERROR    | src.ai_analysis.openai_client:analyze_job_posting:97 - Error analyzing job posting with OpenAI: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your_ope************here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-08-20 21:28:00 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:100 - OpenAI analysis completed
+2025-08-20 21:28:00 | INFO     | __main__:test_multi_scraper_system:155 -     ✅ AI analysis complete (Quality: limited, Confidence: 0.00%)
+2025-08-20 21:28:00 | INFO     | __main__:test_multi_scraper_system:164 -     📋 Business Analyst, Amazon Fresh Grocery at Amazon.com Services LLC
+2025-08-20 21:28:02 | INFO     | __main__:test_multi_scraper_system:107 -   Processing job 2/3
+2025-08-20 21:28:06 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:28:13 | INFO     | __main__:test_multi_scraper_system:129 -     🤖 Running AI analysis...
+2025-08-20 21:28:13 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:91 - Starting comprehensive analysis for: Manager, Business Analysis And Insights at Walmart
+2025-08-20 21:28:14 | ERROR    | src.ai_analysis.openai_client:analyze_job_posting:97 - Error analyzing job posting with OpenAI: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your_ope************here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-08-20 21:28:14 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:100 - OpenAI analysis completed
+2025-08-20 21:28:14 | INFO     | __main__:test_multi_scraper_system:155 -     ✅ AI analysis complete (Quality: limited, Confidence: 0.00%)
+2025-08-20 21:28:14 | INFO     | __main__:test_multi_scraper_system:164 -     📋 Manager, Business Analysis And Insights at Walmart
+2025-08-20 21:28:16 | INFO     | __main__:test_multi_scraper_system:107 -   Processing job 3/3
+2025-08-20 21:28:19 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:28:26 | INFO     | __main__:test_multi_scraper_system:129 -     🤖 Running AI analysis...
+2025-08-20 21:28:26 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:91 - Starting comprehensive analysis for: Business Intelligence Engineer, Supply Chain Innovation at Amazon.com Services LLC
+2025-08-20 21:28:26 | ERROR    | src.ai_analysis.openai_client:analyze_job_posting:97 - Error analyzing job posting with OpenAI: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your_ope************here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-08-20 21:28:26 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:100 - OpenAI analysis completed
+2025-08-20 21:28:26 | INFO     | __main__:test_multi_scraper_system:155 -     ✅ AI analysis complete (Quality: limited, Confidence: 0.00%)
+2025-08-20 21:28:26 | INFO     | __main__:test_multi_scraper_system:164 -     📋 Business Intelligence Engineer, Supply Chain Innovation at Amazon.com Services LLC
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:178 - ✅ Scenario 2 completed: 3 jobs processed
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:185 - 
+📈 System Test Results
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:186 - ========================================
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:190 - 📊 Total Jobs Processed: 8
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:195 - 🎯 Scraping Success Rate: 100.0%
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:201 - 🤖 AI Analysis Success Rate: 100.0%
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:212 - 🎲 Average AI Confidence: 0.00%
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:224 - ⭐ AI Analysis Quality Distribution:
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:226 -   Limited: 8
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:231 - 🏠 Remote Jobs: 5/8 (62.5%)
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:235 - 🏢 Unique Companies: 7
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:255 - 
+💾 Exporting Results
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:256 - ------------------------------
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:289 - ✅ Results exported to: data\results\multi_scraper_test_20250820_212828.json
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:295 - 
+🎯 System Status Report
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:296 - ==============================
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:305 - Working Components:
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:307 -   ✅ Web Scraping
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:307 -   ✅ AI Analysis
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:310 - 
+🚀 Next Steps:
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:316 - 2. Scale up testing with more job sites
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:317 - 3. Build data visualization dashboard
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:318 - 4. Implement advanced analytics
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:320 - 
+🎉 Multi-Scraper Test Complete!
+2025-08-20 21:28:28 | INFO     | __main__:test_multi_scraper_system:321 - System is ready for production use!
+2025-08-20 21:36:06 | INFO     | __main__:test_multi_scraper_system:55 - 🚀 Multi-Scraper Test with AI Integration
+2025-08-20 21:36:06 | INFO     | __main__:test_multi_scraper_system:56 - ============================================================
+2025-08-20 21:36:06 | INFO     | __main__:test_multi_scraper_system:63 - 🤖 AI Analysis: ENABLED
+2025-08-20 21:36:06 | INFO     | src.ai_analysis.job_analyzer:__init__:61 - OpenAI client initialized
+2025-08-20 21:36:06 | INFO     | __main__:test_multi_scraper_system:106 - 
+📊 Scenario 1: Remote Data Analyst Jobs - Past Month
+2025-08-20 21:36:06 | INFO     | __main__:test_multi_scraper_system:107 - --------------------------------------------------
+2025-08-20 21:36:06 | INFO     | __main__:test_multi_scraper_system:114 - 🔍 Testing Indeed scraper...
+2025-08-20 21:36:06 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 21:36:10 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:36:10 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:54 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Data+Analyst+OR+Remote&l=&start=0&sort=date&fromage=30
+2025-08-20 21:36:23 | WARNING  | src.data_collection.scrapers.indeed_scraper:search_jobs:65 - Timeout waiting for job results on page 1
+2025-08-20 21:36:25 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:107 - Indeed search completed. Found 0 job URLs
+2025-08-20 21:36:25 | WARNING  | __main__:test_multi_scraper_system:128 - No jobs found from Indeed
+2025-08-20 21:36:25 | INFO     | __main__:test_multi_scraper_system:132 - 🔍 Testing LinkedIn scraper...
+2025-08-20 21:36:25 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized LinkedIn scraper
+2025-08-20 21:36:28 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for LinkedIn
+2025-08-20 21:36:28 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:56 - Searching LinkedIn page 1: https://www.linkedin.com/jobs/search?keywords=Data+Analyst+Remote&location=&start=0&sortBy=DD&f_TPR=r2592000
+2025-08-20 21:36:35 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:91 - Found 0 jobs on LinkedIn page 1, total: 0
+2025-08-20 21:36:35 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:101 - No next page found on LinkedIn, ending search
+2025-08-20 21:36:37 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:111 - LinkedIn search completed. Found 0 job URLs
+2025-08-20 21:36:37 | WARNING  | __main__:test_multi_scraper_system:148 - No jobs found from LinkedIn
+2025-08-20 21:36:37 | WARNING  | __main__:test_multi_scraper_system:154 - No jobs found for scenario 1
+2025-08-20 21:36:37 | INFO     | __main__:test_multi_scraper_system:106 - 
+📊 Scenario 2: Business Intelligence - Major Cities - Past Month
+2025-08-20 21:36:37 | INFO     | __main__:test_multi_scraper_system:107 - --------------------------------------------------
+2025-08-20 21:36:37 | INFO     | __main__:test_multi_scraper_system:114 - 🔍 Testing Indeed scraper...
+2025-08-20 21:36:37 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 21:36:40 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:36:40 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:54 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Business+Intelligence+OR+BI&l=New+York%2C+NY&start=0&sort=date&fromage=30
+2025-08-20 21:36:55 | WARNING  | src.data_collection.scrapers.indeed_scraper:search_jobs:65 - Timeout waiting for job results on page 1
+2025-08-20 21:36:57 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:107 - Indeed search completed. Found 0 job URLs
+2025-08-20 21:36:57 | WARNING  | __main__:test_multi_scraper_system:128 - No jobs found from Indeed
+2025-08-20 21:36:57 | INFO     | __main__:test_multi_scraper_system:132 - 🔍 Testing LinkedIn scraper...
+2025-08-20 21:36:57 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized LinkedIn scraper
+2025-08-20 21:37:00 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for LinkedIn
+2025-08-20 21:37:00 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:56 - Searching LinkedIn page 1: https://www.linkedin.com/jobs/search?keywords=Business+Intelligence+BI&location=New+York%2C+NY&start=0&sortBy=DD&f_TPR=r2592000
+2025-08-20 21:37:05 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:91 - Found 0 jobs on LinkedIn page 1, total: 0
+2025-08-20 21:37:05 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:101 - No next page found on LinkedIn, ending search
+2025-08-20 21:37:07 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:111 - LinkedIn search completed. Found 0 job URLs
+2025-08-20 21:37:07 | WARNING  | __main__:test_multi_scraper_system:148 - No jobs found from LinkedIn
+2025-08-20 21:37:07 | WARNING  | __main__:test_multi_scraper_system:154 - No jobs found for scenario 2
+2025-08-20 21:37:07 | INFO     | __main__:test_multi_scraper_system:106 - 
+📊 Scenario 3: Data Science - Remote Opportunities
+2025-08-20 21:37:07 | INFO     | __main__:test_multi_scraper_system:107 - --------------------------------------------------
+2025-08-20 21:37:07 | INFO     | __main__:test_multi_scraper_system:114 - 🔍 Testing Indeed scraper...
+2025-08-20 21:37:07 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 21:37:10 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:37:10 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:54 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Data+Science+OR+Data+Scientist&l=&start=0&sort=date&fromage=30
+2025-08-20 21:37:24 | WARNING  | src.data_collection.scrapers.indeed_scraper:search_jobs:65 - Timeout waiting for job results on page 1
+2025-08-20 21:37:26 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:107 - Indeed search completed. Found 0 job URLs
+2025-08-20 21:37:26 | WARNING  | __main__:test_multi_scraper_system:128 - No jobs found from Indeed
+2025-08-20 21:37:26 | INFO     | __main__:test_multi_scraper_system:132 - 🔍 Testing LinkedIn scraper...
+2025-08-20 21:37:26 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized LinkedIn scraper
+2025-08-20 21:37:30 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for LinkedIn
+2025-08-20 21:37:30 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:56 - Searching LinkedIn page 1: https://www.linkedin.com/jobs/search?keywords=Data+Science+Data+Scientist&location=&start=0&sortBy=DD&f_TPR=r2592000
+2025-08-20 21:37:36 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:91 - Found 0 jobs on LinkedIn page 1, total: 0
+2025-08-20 21:37:36 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:101 - No next page found on LinkedIn, ending search
+2025-08-20 21:37:38 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:111 - LinkedIn search completed. Found 0 job URLs
+2025-08-20 21:37:38 | WARNING  | __main__:test_multi_scraper_system:148 - No jobs found from LinkedIn
+2025-08-20 21:37:38 | WARNING  | __main__:test_multi_scraper_system:154 - No jobs found for scenario 3
+2025-08-20 21:37:38 | INFO     | __main__:test_multi_scraper_system:106 - 
+📊 Scenario 4: Analytics - San Francisco Bay Area
+2025-08-20 21:37:38 | INFO     | __main__:test_multi_scraper_system:107 - --------------------------------------------------
+2025-08-20 21:37:38 | INFO     | __main__:test_multi_scraper_system:114 - 🔍 Testing Indeed scraper...
+2025-08-20 21:37:38 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 21:37:41 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:37:42 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:54 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Analytics+OR+Business+Analyst&l=San+Francisco%2C+CA&start=0&sort=date&fromage=30
+2025-08-20 21:37:56 | WARNING  | src.data_collection.scrapers.indeed_scraper:search_jobs:65 - Timeout waiting for job results on page 1
+2025-08-20 21:37:58 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:107 - Indeed search completed. Found 0 job URLs
+2025-08-20 21:37:58 | WARNING  | __main__:test_multi_scraper_system:128 - No jobs found from Indeed
+2025-08-20 21:37:58 | INFO     | __main__:test_multi_scraper_system:132 - 🔍 Testing LinkedIn scraper...
+2025-08-20 21:37:58 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized LinkedIn scraper
+2025-08-20 21:38:02 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for LinkedIn
+2025-08-20 21:38:02 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:56 - Searching LinkedIn page 1: https://www.linkedin.com/jobs/search?keywords=Analytics+Business+Analyst&location=San+Francisco%2C+CA&start=0&sortBy=DD&f_TPR=r2592000
+2025-08-20 21:38:08 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:91 - Found 0 jobs on LinkedIn page 1, total: 0
+2025-08-20 21:38:08 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:101 - No next page found on LinkedIn, ending search
+2025-08-20 21:38:10 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:111 - LinkedIn search completed. Found 0 job URLs
+2025-08-20 21:38:10 | WARNING  | __main__:test_multi_scraper_system:148 - No jobs found from LinkedIn
+2025-08-20 21:38:10 | WARNING  | __main__:test_multi_scraper_system:154 - No jobs found for scenario 4
+2025-08-20 21:38:10 | INFO     | __main__:test_multi_scraper_system:248 - 
+📈 System Test Results
+2025-08-20 21:38:10 | INFO     | __main__:test_multi_scraper_system:249 - ========================================
+2025-08-20 21:38:10 | INFO     | __main__:test_multi_scraper_system:328 - 
+💾 Exporting Results
+2025-08-20 21:38:10 | INFO     | __main__:test_multi_scraper_system:329 - ------------------------------
+2025-08-20 21:38:10 | INFO     | __main__:test_multi_scraper_system:363 - ✅ Results exported to: data\results\multi_scraper_test_20250820_213810.json
+2025-08-20 21:38:10 | INFO     | __main__:test_multi_scraper_system:369 - 
+🎯 System Status Report
+2025-08-20 21:38:10 | INFO     | __main__:test_multi_scraper_system:370 - ==============================

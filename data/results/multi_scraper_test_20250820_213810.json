@@ -1,0 +1,22 @@
+{
+  "test_metadata": {
+    "timestamp": "2025-08-20T21:38:10.344319",
+    "total_jobs": 0,
+    "scenarios_tested": 4,
+    "ai_analysis_enabled": true,
+    "scrapers_tested": [
+      "indeed",
+      "linkedin"
+    ],
+    "system_status": "operational",
+    "search_timeframe": "past_30_days"
+  },
+  "results": [],
+  "summary_stats": {
+    "total_jobs": 0,
+    "scraping_success_rate": 0,
+    "ai_success_rate": 0,
+    "remote_percentage": 0,
+    "unique_companies": 0
+  }
+}

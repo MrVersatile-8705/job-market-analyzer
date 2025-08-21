@@ -61,23 +61,23 @@ class ClaudeClient:
         try:
             response = self.client.messages.create(
                 model=self.model,
-                max_tokens=1000,
-                messages=[{"role": "user", "content": prompt}]
+                max_tokens=800,
+                temperature=0.3,
+                messages=[
+                    {"role": "user", "content": prompt}
+                ]
             )
             
-            # Parse response and create CompensationAnalysis object
-            analysis_text = response.content[0].text
-            # Add JSON parsing logic here
+            result_text = response.content[0].text.strip()
             
-            return CompensationAnalysis(
-                salary_mentioned=False,  # Parse from response
-                salary_range=None,
-                benefits_mentioned=[],
-                total_comp_estimate=None,
-                equity_mentioned=False,
-                bonus_mentioned=False,
-                compensation_competitiveness="average"
-            )
+            # Clean up JSON
+            if "```json" in result_text:
+                result_text = result_text.split("```json")[1].split("```")[0]
+            elif "```" in result_text:
+                result_text = result_text.split("```")[1]
+            
+            result_data = json.loads(result_text)
+            return CompensationAnalysis(**result_data)
             
         except Exception as e:
             logger.error(f"Claude compensation analysis failed: {e}")
@@ -115,19 +115,22 @@ class ClaudeClient:
             response = self.client.messages.create(
                 model=self.model,
                 max_tokens=1000,
-                messages=[{"role": "user", "content": prompt}]
+                temperature=0.2,
+                messages=[
+                    {"role": "user", "content": prompt}
+                ]
             )
             
-            # Parse and return RequirementAnalysis
-            return RequirementAnalysis(
-                must_have_skills=[],
-                nice_to_have_skills=[],
-                education_required="",
-                experience_required="",
-                certifications_required=[],
-                industry_experience=[],
-                domain_knowledge=[]
-            )
+            result_text = response.content[0].text.strip()
+            
+            # Clean up JSON
+            if "```json" in result_text:
+                result_text = result_text.split("```json")[1].split("```")[0]
+            elif "```" in result_text:
+                result_text = result_text.split("```")[1]
+            
+            result_data = json.loads(result_text)
+            return RequirementAnalysis(**result_data)
             
         except Exception as e:
             logger.error(f"Claude requirements analysis failed: {e}")

@@ -22,8 +22,15 @@ class LinkedInScraper(BaseScraper):
         super().__init__("LinkedIn", "https://www.linkedin.com")
         self.search_url = f"{self.base_url}/jobs/search"
 
-    def search_jobs(self, keywords: List[str], location: str = "United States", limit: int = 1000) -> List[str]:
-        """Search for jobs on LinkedIn and return job URLs."""
+    def search_jobs(self, keywords: List[str], location: str = "United States", limit: int = 1000, days_back: Optional[int] = None) -> List[str]:
+        """Search for jobs on LinkedIn and return job URLs.
+        
+        Args:
+            keywords: List of keywords to search for
+            location: Location to search in
+            limit: Maximum number of job URLs to return
+            days_back: Number of days to look back (optional, default: no time filter)
+        """
         job_urls = []
         query = " ".join(keywords)  # LinkedIn uses space-separated keywords
         
@@ -33,13 +40,19 @@ class LinkedInScraper(BaseScraper):
         try:
             page = 0
             while len(job_urls) < limit:
-                # Build search URL for LinkedIn
+                # Build search URL for LinkedIn with optional time filter
                 search_params = {
                     'keywords': query,
                     'location': location,
                     'start': page * 25,  # LinkedIn shows 25 jobs per page
                     'sortBy': 'DD'  # Sort by date (most recent)
                 }
+                
+                # Add time filter if specified
+                if days_back is not None:
+                    # LinkedIn time filters: 86400 (1 day), 604800 (1 week), 2592000 (1 month)
+                    time_filter = 2592000 if days_back >= 30 else (604800 if days_back >= 7 else 86400)
+                    search_params['f_TPR'] = f'r{time_filter}'  # LinkedIn time filter parameter
                 
                 url = f"{self.search_url}?" + "&".join([f"{k}={quote_plus(str(v))}" for k, v in search_params.items()])
                 logger.info(f"Searching LinkedIn page {page + 1}: {url}")
