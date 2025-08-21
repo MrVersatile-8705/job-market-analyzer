@@ -40,24 +40,24 @@ def test_all_scrapers():
     logger.info("🚀 Multi-Scraper Analytics Job Test")
     logger.info("=" * 60)
     
-    # Test configuration
+    # Test configuration - NATIONWIDE SEARCHES
     test_configs = [
         {
-            "name": "Core Analytics - NYC",
-            "keywords": ["Data Analyst", "Business Analyst"],
-            "location": "New York, NY",
+            "name": "Core Analytics - Nationwide",
+            "keywords": ["Data Analyst", "Business Analyst","Strategy Analyst"],
+            "location": "",  # Nationwide search
             "limit": 5
         },
         {
-            "name": "Data Science - Remote",
+            "name": "Data Science - Nationwide",
             "keywords": ["Data Scientist", "Analytics Engineer"],
-            "location": "Remote",
+            "location": "",  # Nationwide search
             "limit": 5
         },
         {
-            "name": "BI Roles - San Francisco",
-            "keywords": ["BI Developer", "BI Analyst"],
-            "location": "San Francisco, CA",
+            "name": "BI Roles - Nationwide",
+            "keywords": ["BI Developer", "BI Analyst", "Business Intelligence Analyst"],
+            "location": "",  # Nationwide search
             "limit": 5
         }
     ]
@@ -100,7 +100,8 @@ def test_all_scrapers():
                 job_urls = scraper.search_jobs(
                     keywords=config['keywords'],
                     location=config['location'],
-                    limit=config['limit']
+                    limit=config['limit'],
+                    days_back=30
                 )
                 
                 search_time = time.time() - start_time

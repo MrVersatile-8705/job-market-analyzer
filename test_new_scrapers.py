@@ -30,7 +30,7 @@ logger.add(
 )
 logger.add(sys.stdout, level="INFO")
 
-def test_scraper(scraper_class, scraper_name, keywords, location="Remote", limit=3):
+def test_scraper(scraper_class, scraper_name, keywords, location="Remote", limit=3, days_back=30):
     """Test a single scraper with given parameters."""
     
     logger.info(f"\n{'='*60}")
@@ -38,6 +38,7 @@ def test_scraper(scraper_class, scraper_name, keywords, location="Remote", limit
     logger.info(f"Keywords: {keywords}")
     logger.info(f"Location: {location}")
     logger.info(f"Limit: {limit}")
+    logger.info(f"Days back: {days_back}")
     logger.info(f"{'='*60}")
     
     try:
@@ -47,7 +48,7 @@ def test_scraper(scraper_class, scraper_name, keywords, location="Remote", limit
         
         # Test search_jobs method
         start_time = time.time()
-        job_urls = scraper.search_jobs(keywords=keywords, location=location, limit=limit)
+        job_urls = scraper.search_jobs(keywords=keywords, location=location, limit=limit, days_back=days_back)
         end_time = time.time()
         
         # Results
@@ -103,35 +104,39 @@ def main():
     logger.info(f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     logger.info("=" * 80)
     
-    # Test configurations
+    # Test configurations - BROADER SEARCH CRITERIA for better results
     test_configs = [
         {
             'scraper_class': ZipRecruiterScraper,
             'scraper_name': 'ZipRecruiter',
-            'keywords': ['Data Analyst'],
-            'location': 'Remote',
-            'limit': 3
+            'keywords': ['Data Analyst', 'Business Analyst'],  # Multiple common keywords
+            'location': '',  # No location restriction for broader search
+            'limit': 5,
+            'days_back': 90  # Increased from 30 to 90 days
         },
         {
             'scraper_class': DiceScraper,
             'scraper_name': 'Dice',
-            'keywords': ['Data Scientist'],
-            'location': 'San Francisco, CA',
-            'limit': 3
+            'keywords': ['Data', 'Analyst'],  # Very broad keywords
+            'location': '',  # No location restriction
+            'limit': 5,
+            'days_back': 90
         },
         {
             'scraper_class': StackOverflowScraper,
             'scraper_name': 'Stack Overflow Jobs',
-            'keywords': ['Analytics Engineer'],
-            'location': 'New York, NY',
-            'limit': 2  # Smaller limit for SO
+            'keywords': ['Data', 'Analytics'],  # Broader keywords
+            'location': '',  # No location restriction
+            'limit': 3,  # Smaller limit for SO
+            'days_back': 90
         },
         {
             'scraper_class': BuiltinScraper,
             'scraper_name': 'Builtin',
-            'keywords': ['BI Developer'],
-            'location': 'Austin, TX',
-            'limit': 3
+            'keywords': ['Analyst', 'Data'],  # Very common keywords
+            'location': '',  # No location restriction for broader search
+            'limit': 5,
+            'days_back': 90
         }
     ]
     

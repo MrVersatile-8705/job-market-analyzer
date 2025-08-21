@@ -144,33 +144,33 @@ ENHANCED_SEARCH_CONFIGS = [
     }
 ]
 
-# Working search configurations (proven to find jobs)
+# Working search configurations (proven to find jobs) - ALL NATIONWIDE
 WORKING_SEARCH_CONFIGS = [
     {
-        "name": "Data Analyst Positions - Cleveland Market",
+        "name": "Data Analyst Positions - Nationwide",
         "keywords": ["Data Analyst"],
-        "location": "Cleveland, OH",
+        "location": "",  # Nationwide search
         "limit": 25,
         "days_back": 90,
     },
     {
         "name": "Business Intelligence - Nationwide",
         "keywords": ["Business Intelligence", "BI Analyst"],
-        "location": "",  # No location for remote focus
+        "location": "",  # Nationwide search
         "limit": 25,
         "days_back": 90,
     },
     {
-        "name": "Analytics Engineers - Remote Positions",
+        "name": "Analytics Engineers - Nationwide",
         "keywords": ["Analytics Engineer", "Data Engineer"],
-        "location": "Remote",
+        "location": "",  # Nationwide search
         "limit": 25,
         "days_back": 90,
     },
     {
-        "name": "Strategy Analysts - National Search",
+        "name": "Strategy Analysts - Nationwide",
         "keywords": ["Strategy Analyst", "Business Strategy Manager"],
-        "location": "",
+        "location": "",  # Nationwide search
         "limit": 25,
         "days_back": 90,
     }
