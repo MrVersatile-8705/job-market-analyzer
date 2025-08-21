@@ -1,0 +1,159 @@
+{
+  "test_metadata": {
+    "timestamp": "2025-08-20T22:18:07.464746",
+    "test_type": "focused_small_scope",
+    "total_jobs": 5,
+    "ai_enabled": true,
+    "success": true
+  },
+  "results": [
+    {
+      "test_case": "Entry-Level Data Analyst",
+      "source": "indeed",
+      "title": "Data Analyst I",
+      "company": "PatientIQ",
+      "location": "",
+      "description": "Location:RemoteReports to:Manager of IntegrationsDepartment:ImplementationAbout PatientIQPatientIQ is a fast-growing healthcare technology company on a mission to improve patient outcomes through smarter, data-driven care. We work with healthcare providers, life sciences organizations, and research institutions to transform clinical insights into action. As we scale, we are investing in strong operational infrastructure to enable consistent, predictable growth across the commercial organization.Role OverviewAre you interested in building the future of healthcare and transforming the patient experience? Are you hopeful about what data and medical research can do to improve medicine? We’re looking for a Data Analyst to ensure PatientIQ remains at the forefront of using data to drive positive healthcare outcomes.As a core member of the Data Engineering department, you will be in a dynamic environment that works cross-functionally with all other departments, such as Engineering, Product, Customer Success, and Marketing. You will work on a broad array of problems that rely on data to derive insights for our business and customers. We heavily value diligence, curiosity, and initiative, which are key to unlocking the value of PatientIQ's data for our users and decision-making. Your work will be impactful across the entire organization.What You’ll DoDeveloping analytic solutions for internal teams and external customers on topics such as business development, patient engagement, patient-reported outcomes, and performance intelligence.Collecting, cleaning, and organizing large datasets from a variety of sources.Developing and implementing statistical models to uncover trends and patterns in the data.Communicating findings and insights to stakeholders through clear and compelling visualizations and reports using tools such as Metabase.Collaborating with cross-functional teams to identify opportunities for data-driven decision-making and innovation.Contributing to existing data pipelines through feedback or directly to ensure the accuracy and reliability of our data.Helping to identify and implement new data sources to support our analysis efforts.Assist the customer success teams with ad-hoc data and reporting requests from the customers.Technologies We UsePython, SQL, dbtHubSpot, JIRASnowflake, FivetranMetabase, Apache Airflow, Excel / Google SheetsRequirementsWhat You BringBachelor’s degree in mathematics, engineering, business, statistics, or a related field.Deep knowledge of SQL, dbt, and Python.Proficient in Business Intelligence (BI) and any visualization software.Experience with a CRM (e.g., HubSpot or Salesforce).Highly self-motivated with strong analytical problem-solving skills and attention to detail.Ability to handle multiple projects simultaneously.Ability to prioritize tasks, regularly communicate progress, and meet established deadlines.Nice to HaveKnowledge of statistical analysis/machine learning, including data modeling, statistical testing, confidence intervals, and forecasting.Experience working with electronic health records and medical data in general.Experience working at a high-growth company.Experience working with other object-oriented languages, such as Ruby.BenefitsGreat Benefits- top-notch health, dental and vision insurance. Additional perks available including 401K.We are Mission Driven- our team is motivated to solve complex problems, drive medicine forward, and ultimately improve patient outcomes.True Idea Meritocracy- great ideas win out. We encourage all team members to challenge the status quo because our mission demands this.Flexible Time Off- we trust you to take the time you need when you feel it is appropriate, given your workload and responsibilities. No need to track it or save up.World-Class Team- we’re at the top of our industry because of our employees. They’re the best investment we can make, and we never forget that.Fast Growing- we are building the largest platform for healthcare providers, industry partners, researchers, and others to collaborate on the mission to improve patient outcomes.",
+      "salary": null,
+      "remote_option": true,
+      "url": "https://www.indeed.com/viewjob?jk=a7bfdf80d62d00c7",
+      "scraped_at": "2025-08-20T22:14:58.540803",
+      "ai_analysis": {
+        "confidence_score": 1.0,
+        "analysis_quality": "excellent",
+        "skills_identified": [
+          "SQL",
+          "dbt",
+          "Python",
+          "Business Intelligence",
+          "visualization software",
+          "CRM experience",
+          "analytical problem-solving"
+        ],
+        "experience_level": "entry",
+        "salary_estimate": null,
+        "remote_friendly": true,
+        "industry": "Healthcare Technology",
+        "analyzed_at": "2025-08-20T22:15:23.722815"
+      }
+    },
+    {
+      "test_case": "Entry-Level Data Analyst",
+      "source": "indeed",
+      "title": "Data Analyst",
+      "company": "CBRE",
+      "location": "",
+      "description": "Data AnalystJob ID233720Posted20-Aug-2025Service lineGWS SegmentRole typeFull-timeAreas of InterestData & AnalyticsLocation(s)Remote - US - Remote - US - United States of AmericaAbout the Role:As a CBRE Data Analyst, you will perform basic analysis to ensure that recommendations and business conclusions are backed by thorough data research and findings.This job is part of the Data Science & Analytics job function. They are responsible for reviewing data that supports improving effectiveness and predicting outcomes to develop business intelligence.Travel to Cleveland, OH may be necessary 2-3 times per year.What You’ll Do:Coordinate data aggregation and curate reports using existing business intelligence and reporting applications.Perform ad-hoc, strategic review of structured and unstructured data, reflecting global real estate markets and the operations of real estate assets.Assist with developing data structures and pipelines to organize, collect, cleanse, and standardize information to generate insights.Define basic data requirements and gather information using judgment and statistical tests.Use programming and evaluation tools, including open-source programs to plan models and extract insights.Apply modeling and optimization methods to improve business performance.Develop ad-hoc reporting based on the review of existing data sources.Exhibit rigor, judgment, and ability to present a detailed 'data story' to a business line.Confirm the quality and integrity of existing data sources.Collaborate with the agile development team to provide recommendations and communications on enhancing existing or new processes and programs.Have some knowledge of standard principles with limited practical experience in applying them.Lead by example and model behaviors that are consistent with CBRE RISE values.Impact the quality of own work.Work within standardized procedures and practices to achieve objectives and meet deadlines.Exchange straightforward information, ask questions, and check for understanding.What You’ll Need:Bachelor's Degree preferred with up to 3 years of relevant experience. In lieu of a degree, a combination of experience and education will be considered. MCSE and CNE Certification preferred.Functional use of Tableau or MS-Business Intelligence.Ability to work within team and independently.Ability to use existing procedures to solve standard problems.Experience with analyzing information and standard practices to make judgments.In-depth knowledge of Microsoft Office products. Examples include Word, Excel, Outlook, etc.Organizational skills with a strong inquisitive mindset.Why CBRE?When you join CBRE you will have the support and resources of a global firm where an entrepreneurial mentality is encouraged. You'll realize your potential with exciting work, fast-paced assignments, an environment of constant learning and dedication to results! To enable your success, we provide the best tools, training and leaders in the industry.Our culture is built on ourRISEvalues and reflects the needs and perspectives of our clients and our people. Our work is guided by our North Star: Crafting the real estate solutions of tomorrow, so businesses and people thrive.Coming to work for CBRE, you will receive a comprehensive benefits package, 401k, and extraordinary perks such as career growth and longevity!DisclaimerApplicants must be currently authorized to work in the United States without a need for visa sponsorship now or in the future.CBRE carefully considers multiple factors to determine compensation, including a candidate’s education, training, and experience. The minimum salary for the Data Analyst position is $65,000 annually and the maximum salary for the Data Analyst position is $79,000 annually. The compensation offered to a successful candidate will depend on their skills, qualifications, and experience. Successful candidates will also be eligible for a discretionary bonus based on CBRE’s applicable benefit program. This role will provide the following benefits: 401(K), Dental insurance, Health insurance, Life insurance, and Vision insurance.Equal Employment Opportunity:CBRE has a long-standing commitment to providing equal employment opportunity to all qualified applicants regardless of race, color, religion, national origin, sex, sexual orientation, gender identity, pregnancy, age, citizenship, marital status, disability, veteran status, political belief, or any other basis protected by applicable law.Candidate Accommodations:CBRE values the differences of all current and prospective employees and recognizes how every employee contributes to our company’s success. CBRE provides reasonable accommodations in job application procedures for individuals with disabilities. If you require assistance due to a disability in the application or recruitment process, please submit a request via email at recruitingaccommodations@cbre.com or via telephone at +1 866 225 3099 (U.S.) and +1 866 388 4346 (Canada).CBRE GWSCBRE Global Workplace Solutions (GWS) works with clients to make real estate a meaningful contributor to organizational productivity and performance. Our account management model is at the heart of our client-centric approach to delivering integrated real estate solutions. Each client is entrusted with a dedicated leader and is supported by regional and global resources, leveraging the industry's most robust platform. CBRE GWS delivers consistent, measurably superior outcomes for our clients at every stage of the lifecycle, and across industries and geographies.Find out more",
+      "salary": null,
+      "remote_option": true,
+      "url": "https://www.indeed.com/viewjob?jk=5de04b5caacb5df7",
+      "scraped_at": "2025-08-20T22:15:34.960775",
+      "ai_analysis": {
+        "confidence_score": 1.0,
+        "analysis_quality": "excellent",
+        "skills_identified": [
+          "Data aggregation",
+          "Report curation",
+          "Data analysis",
+          "Programming",
+          "Microsoft Office"
+        ],
+        "experience_level": "entry",
+        "salary_estimate": "$65,000 - $79,000 annually",
+        "remote_friendly": true,
+        "industry": "Real Estate",
+        "analyzed_at": "2025-08-20T22:16:01.392644"
+      }
+    },
+    {
+      "test_case": "Entry-Level Data Analyst",
+      "source": "indeed",
+      "title": "Data Analyst",
+      "company": "Bluesight",
+      "location": "",
+      "description": "At Bluesight, our mission is to create groundbreaking solutions that increase efficiency, safety and visibility for health systems, hospital pharmacy, and pharmaceutical manufacturers. We empower our customers to deliver the right medicine to the right patient at the right time, every time. We are a high growth healthcare information technology company with a start-up 'vibe' but over 2,000 customers using our proven solutions.We’re looking for a Data Analyst to support the implementation of Bluesight SaaS products for our hospital customers. This person collects data, synthesizes and interprets results from a variety of disparate systems. The role will be responsible for finding and interpreting pertinent data points from both internal and external healthcare database source systems and developing analytical solutions using various business intelligence tools.This role is heavily Excel-focused and involves both customer interaction and scripting. Typical work breakdown:Excel: 60–70%Customer-facing interactions: 20–30%SQL, Python, Ruby, and SFTP tasks: 5–10%Candidates should be passionate about Excel, comfortable working directly with customers, and capable of leveraging SQL/Python/Ruby when needed to support file ingestion and automation.Representative Duties and Responsibilities:Validate, reconcile, and analyze data input from disparate systems to ensure data integrity using ExcelClearly communicate data findings and serve as a point person for troubleshooting and resolving technical issues.Partner with the implementation project lead and the customer to track progress, provide timely updates, and review data points with customersPerform data extraction tasks using multiple databases through SQLDevelop solutions to support the SFTP automation of ongoing reporting needsAcquire and retrieve data as necessary, and assists in troubleshooting of data issues to ease end-user use of the applicationCollaborate cross-functionally with the implementation, product, and engineering team to identify trends, improve processes, and enhance data pipelines.Perform reconciliation and quality assurance of client data through the use of analytical and audit proceduresRequired Qualifications and Skills:Eligibility to work in the United States without a work VIsa SponsorshipBachelor’s degree, or equivalent experience2+ years of experience in data analysis, experience in the healthcare industry a plusDeep expertise and enthusiasm for Microsoft Excel and for using it to solve complex problems and trend dataModerate experience with SQL for data extraction and transformationCommunicates promptly and effectively with both customers and internal teams, which includes both non-technical and technical audiencesStrong problem-solving and troubleshooting skills with high attention to detailProven ability to manage multiple projects, balance competing priorities, and meet goals and deadlinesSelf-starter with a demonstrated history of success, multiple examples of taking initiative, and the ability to thrive in a fast-paced, high-pressure environmentStrong interpersonal and customer service skills, with the ability to collaborate effectively in teams and consistently meet or exceed customer expectationsStrong verbal and written communication skillsDesirable Qualifications:Experience working on an Operations team, especially in a customer-facing or implementation-focused roleFamiliarity with installing or implementing SaaS products in a client environmentKnowledge of hospital data systems (e.g. EHR, ADS, purchasing reports, etc.)Experience in Python or Ruby or other scripting languageExperience working with PHI or other sensitive dataBluesight offers a variety of health and wellness benefits to employees. The pay range for this position is $75,000 - $85,000 and includes eligibility for an annual discretionary bonus in addition to base salary. The actual wage offered may be lower or higher depending on candidate's experience, knowledge, skills, qualifications and premium geographic location.This position is a remote position and open to applicants in the continental United States.Why Bluesight?Bluesight’s culture is built on innovation and teamwork. There’s room to grow and opportunities to take initiative. You will partner with sharp, motivated teammates looking to disrupt a massive industry—and have fun doing it. We truly believe that where you work and what you do matters. Join us as we revolutionize the hospital pharmacy landscape!Competitive salaryTime off when you need it – unlimited vacation days!Generous insurance coverage401k program with a company matchFun, collaborative culture!EOE AA M/F/VET/DisabilityAll qualified applicants will receive consideration for employment and will not be discriminated against on the basis of race, religion, color, national origin, sex, protected veteran status, disability, or any other basis protected by federal, state or local laws.",
+      "salary": null,
+      "remote_option": true,
+      "url": "https://www.indeed.com/viewjob?jk=2c18b91842e5c564",
+      "scraped_at": "2025-08-20T22:16:12.911471",
+      "ai_analysis": {
+        "confidence_score": 1.0,
+        "analysis_quality": "excellent",
+        "skills_identified": [
+          "Microsoft Excel expertise",
+          "SQL for data extraction and transformation",
+          "Problem-solving and troubleshooting",
+          "Project management",
+          "Verbal and written communication"
+        ],
+        "experience_level": "mid",
+        "salary_estimate": "$75,000 - $85,000",
+        "remote_friendly": true,
+        "industry": "Healthcare Technology",
+        "analyzed_at": "2025-08-20T22:16:38.675148"
+      }
+    },
+    {
+      "test_case": "Business Intelligence Analyst",
+      "source": "indeed",
+      "title": "Enablement Services Business Analyst",
+      "company": "Neuberger Berman",
+      "location": "",
+      "description": "We are seeking an experienced and motivated Business Analyst to join our Enablement Services team at Neuberger. Enablement Services is a centralized team of change agents supporting initiatives for the firm, across all regions, business lines, departments, and processes. Our mandate is to collaborate with our investment, distribution, and operating platform departments, to understand needs, address pain points, and ensure that our infrastructure and capabilities are seamlessly connected and optimally utilized through the delivery of change.This role will have a specific focus on business process and providing a center of enablement for the Monday.com platform.Responsibilities:Lead end-to-end reviews of existing business processes by collaborating with cross-functional stakeholders to document current-state workflows, proactively identify inefficiencies, and recommend actionable improvements.Develop clear future-state process maps that align with business goals and drive operational excellence.Evaluate and triage business needs to determine the optimal workflow solution—whether leveraging Monday.com, Appian, or other platforms.Prioritize initiatives based on impact, urgency, and strategic alignment, ensuring resources are allocated to the highest-value opportunities.For processes suitable to Monday.com, gather detailed requirements from business teams, configure and customize workflows, conduct thorough testing, and manage launches. Continuously refine workflows based on user feedback and evolving business needs.Develop and regularly update a strategic roadmap for the Monday.com platform. Align platform enhancements with evolving business priorities and communicate progress and upcoming changes to stakeholders.Provide ongoing training, workshops, and ongoing support for Monday.com super users and business teams to maximize platform value and user confidence. .Requirements:3+ years’ experience as a business analyst or workflow specialist.Experience with Monday.com or similar workflow/automation tools strongly preferred.Proven ability to map, improve, and recommend changes to business processes.Experience gathering requirements and delivering workflow solutions.Strong communication and training skills; able to simplify the complex for non-technical users.Analytical mindset with attention to detail and a user-centric approach.Experience with integrations, data governance, or process automation tools is a plus.Six Sigma, Lean, or similar process improvement experience is a bonus.Additional Attributes:Proactive, curious, and collaborative.Comfortable working with ambiguity and in a fast-paced, evolving environment.Able to balance strategic planning with hands-on delivery.#LI-DD2#LI-HybridCompensation DetailsThe salary range for this role is $110,000-$140,000. This is the lowest to highest salary we in good faith believe we would pay for this role at the time of this posting. We may ultimately pay more or less than the posted range, and the range may be modified in the future. This range is only applicable for jobs to be performed in the job posting location. An employee’s pay position within the salary range will be based on several factors including, but limited to, relevant education, qualifications, certifications, experience, skills, seniority, geographic location, business sector, performance, shift, travel requirements, sales or revenue-based metrics, market benchmarking data, any collective bargaining agreements, and business or organizational needs. This job is also eligible for a discretionary bonus, which, along with base salary and retirement contributions, is part of our total comprehensive package. We offer a comprehensive package of benefits including paid time off, medical/dental/vision insurance, 401(k), life insurance and other benefits to eligible employees.Note: No amount of pay is considered to be wages or compensation until such amount is earned, vested, and determinable. The amount and availability of any bonus, commission, production, or any other form of compensation that are allocable to a particular employee remains in the Company's sole discretion unless and until paid and may be modified at the Company’s sole discretion, consistent with the law.Neuberger Berman is an equalopportunityemployer. The Firm and its affiliates do not discriminate in employment because of race, creed, national origin, religion, age, color, sex, marital status, sexual orientation, gender identity, disability, citizenship status or protected veteran status, or any other characteristic protected by local, state, or federal laws, rules, or regulations. If you would like to contact us regarding the accessibility of our website or need assistance completing the application process, please contactonlineaccommodations@nb.com.Learn about theApplicant Privacy Notice.",
+      "salary": null,
+      "remote_option": false,
+      "url": "https://www.indeed.com/viewjob?jk=219a7f25c9dc4926",
+      "scraped_at": "2025-08-20T22:17:02.263872",
+      "ai_analysis": {
+        "confidence_score": 1.0,
+        "analysis_quality": "excellent",
+        "skills_identified": [
+          "Business process mapping",
+          "Workflow solution delivery",
+          "Communication and training",
+          "Analytical mindset",
+          "User-centric approach"
+        ],
+        "experience_level": "mid",
+        "salary_estimate": "$110,000 - $140,000",
+        "remote_friendly": true,
+        "industry": "Financial Services",
+        "analyzed_at": "2025-08-20T22:17:27.413513"
+      }
+    },
+    {
+      "test_case": "Business Intelligence Analyst",
+      "source": "indeed",
+      "title": "Data Analyst, Internal AuditNew",
+      "company": "The New York Times",
+      "location": "",
+      "description": "Themissionof The New York Times is to seek the truth and help people understand the world. That means independent journalism is at the heart of all we do as a company. It’s why we have a world-renowned newsroom that sends journalists to report on the ground from nearly 160 countries. It’s why we focus deeply on how our readers will experience our journalism, from print to audio to a world-class digital and app destination. And it’s why our business strategy centers on making journalism so good that it’s worth paying for.About the RoleWe are looking for an experienced data analyst with knowledge of internal controls, risk, and data pipeline architecture, and experience improving data quality across our organization. In this hybrid role, you'll collaborate with business, audit, and technical teams to embed a data-driven perspective into internal audits and projects. You will report to the Internal audit director.Responsibilities:You will query, mine, and analyze large datasets using advanced analytics and BI tools to support audit and management reporting.You will design and implement data testing procedures to ensure data completeness, accuracy, and integrity.You will conduct risk assessments and walkthroughs of business processes for both manual and automated workflows as part of internal audit reviews. Advise teams on process improvements and best practices for data quality controls.You will investigate data anomalies, inconsistencies, or quality issues; provide applicable insights based on output analysis and an understanding of underlying business processes.You will communicate audit findings through clear verbal and written reports, tailoringYou will demonstrate support and understanding of our value of journalistic independence and a strong commitment to our mission to seek the truth and help people understand the world.Basic Qualifications:Bachelor's degree in Computer Science, Information Systems, Business Analytics, or a related field, or equivalent work experience.2+ years' experience in data analytics roles with audit or risk exposure.Advanced SQL skills and proficiency in Python, BI platforms, and spreadsheet programsPreferred Qualifications:1+ years of experience with dbt, Mood, Looker Studio1+ years of experience testing internal controls and business processes in media, finance, or compliance environments.Familiarity with accounting, finance, and risk management concepts.REQ-018716The annual base pay range for this role is between:$95,000 - $105,000 USDThe New York Times Company is committed to being the world’s best source of independent, reliable and quality journalism. To do so, we embrace a diverse workforce that has a broad range of backgrounds and experiences across our ranks, at all levels of the organization. We encourage people from all backgrounds to apply.We are an Equal Opportunity Employer and do not discriminate on the basis of an individual's sex, age, race, color, creed, national origin, alienage, religion, marital status, pregnancy, sexual orientation or affectional preference, gender identity and expression, disability, genetic trait or predisposition, carrier status, citizenship, veteran or military status and other personal characteristics protected by law. All applications will receive consideration for employment without regard to legally protected characteristics. The U.S. Equal Employment Opportunity Commission (EEOC)’s Know Your Rights Poster is available.The New York Times Company will provide reasonable accommodations as required by applicable federal, state, and/or local laws. Individuals seeking an accommodation for the application or interview process should email reasonable.accommodations@nytimes.com. Emails sent for unrelated issues, such as following up on an application, will not receive a response.The Company will further consider qualified applicants, including those with criminal histories, in a manner consistent with the requirements of applicable \"Fair Chance\" laws.Please beware of fraudulent job postings. Scammers may post fraudulent job opportunities, and they may even make fraudulent employment offers. This is done by bad actors to collect personal information and money from victims. All legitimate job opportunities from The New York Times will be accessible through The New York Times careers site. The New York Times will not ask job applicants for financial information or for payment, and will not refer you to a third party to do so. You should never send money to anyone who suggests they can provide employment with The New York Times.If you see a fake or fraudulent job posting, or if you suspect you have received a fraudulent offer, you can report it to The New York Times at NYTapplicants@nytimes.com. You can also file a report with the Federal Trade Commission or your state attorney general.",
+      "salary": null,
+      "remote_option": false,
+      "url": "https://www.indeed.com/viewjob?jk=d25701d1c7bf5c9f",
+      "scraped_at": "2025-08-20T22:17:38.197673",
+      "ai_analysis": {
+        "confidence_score": 0.9000000000000001,
+        "analysis_quality": "excellent",
+        "skills_identified": [
+          "Advanced SQL",
+          "Proficiency in Python",
+          "BI platforms",
+          "Spreadsheet programs"
+        ],
+        "experience_level": "mid",
+        "salary_estimate": "$95,000 - $105,000 USD",
+        "remote_friendly": true,
+        "industry": "Media",
+        "analyzed_at": "2025-08-20T22:18:04.441430"
+      }
+    }
+  ],
+  "summary": {
+    "total_jobs": 5,
+    "ai_success_rate": 100.0,
+    "sources": {
+      "indeed": 5
+    }
+  }
+}
