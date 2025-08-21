@@ -14,6 +14,7 @@ from statistical_analysis.salary_analyzer import analyze_salary_trends
 from statistical_analysis.trend_analyzer import identify_trends
 from visualization.dashboard import create_dashboard
 from visualization.report_generator import generate_report
+from config.job_search_config import get_all_job_titles, get_enhanced_configs
 import os
 
 def main():

@@ -1,4 +1,19 @@
-#!/usr/bin/env python3
+#!/usr/bimport sys
+import time
+from datetime import datetime
+from pathlib import Path
+from typing import List, Dict, Any
+
+# Add project root to path
+project_root = Path(__file__).parent
+sys.path.insert(0, str(project_root))
+sys.path.insert(0, str(project_root / "src"))
+
+from loguru import logger
+from src.config.settings import Settings  
+from src.config.job_search_config import get_focused_configs, get_all_job_titles
+from src.data_collection.scrapers.indeed_scraper import IndeedScraper
+from src.ai_analysis.job_analyzer import AIJobAnalyzer
 """
 Focused Small-Scope Test
 Tests the complete pipeline with a small, manageable dataset
@@ -51,23 +66,11 @@ def focused_test():
         logger.error(f"❌ AI initialization failed: {e}")
         ai_enabled = False
     
-    # Define focused test cases
-    test_cases = [
-        {
-            "name": "Entry-Level Data Analyst",
-            "keywords": ["Data Analyst", "Entry Level"],
-            "location": "Remote",
-            "limit": 3,  # Very small to start
-            "expected_skills": ["Excel", "SQL", "Python", "Tableau"]
-        },
-        {
-            "name": "Business Intelligence Analyst", 
-            "keywords": ["Business Intelligence", "BI Analyst"],
-            "location": "New York, NY",
-            "limit": 2,  # Even smaller
-            "expected_skills": ["Power BI", "SQL", "Tableau", "Analytics"]
-        }
-    ]
+    # Get comprehensive focused test configurations
+    test_cases = get_focused_configs()
+    
+    logger.info(f"📊 Running {len(test_cases)} focused test configurations")
+    logger.info(f"🎯 Job titles included: {', '.join(get_all_job_titles()[:5])}... (20 total)")
     
     all_results = []
     

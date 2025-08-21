@@ -1,0 +1,43 @@
+{
+  "analysis_timestamp": "2025-08-20T22:59:50.090437",
+  "source_data": "job_market_analysis_data",
+  "dataset_overview": {
+    "total_jobs_analyzed": 5,
+    "ai_analysis_coverage_percent": 100.0,
+    "unique_companies": 5,
+    "unique_skills_identified": 26,
+    "remote_work_percentage": 60.0
+  },
+  "market_insights": {
+    "most_demanded_skills": {
+      "SQL": 1,
+      "dbt": 1,
+      "Python": 1,
+      "Business Intelligence": 1,
+      "visualization software": 1,
+      "CRM experience": 1,
+      "analytical problem-solving": 1,
+      "Data aggregation": 1,
+      "Report curation": 1,
+      "Data analysis": 1
+    },
+    "hiring_companies": [
+      "PatientIQ",
+      "Bluesight",
+      "CBRE",
+      "Neuberger Berman",
+      "The New York Times"
+    ],
+    "remote_work_availability": "3 out of 5 positions offer remote work"
+  },
+  "data_quality": {
+    "ai_analysis_success_rate": 100.0,
+    "average_skills_per_job": 5.2,
+    "data_completeness_score": 85.0
+  },
+  "recommendations": [
+    "Focus on developing these high-demand skills: SQL, dbt, Python",
+    "Remote work is available in 60% of positions analyzed",
+    "Diverse hiring landscape with opportunities across multiple companies"
+  ]
+}

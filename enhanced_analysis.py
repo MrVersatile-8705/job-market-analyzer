@@ -19,6 +19,7 @@ sys.path.insert(0, str(project_root / "src"))
 
 from loguru import logger
 from src.config.settings import Settings
+from src.config.job_search_config import get_enhanced_configs, get_all_job_titles
 from src.data_collection.scrapers.indeed_scraper import IndeedScraper
 from src.ai_analysis.job_analyzer import AIJobAnalyzer
 
@@ -55,27 +56,27 @@ def enhanced_job_analysis():
             "keywords": ["Data Analyst", "Remote"],
             "location": "",
             "limit": 30,
-            "days_back": 30,
+            "days_back": 90,
         },
         {
             "name": "Business Intelligence - Major Tech Hubs",
             "keywords": ["Business Intelligence", "BI Analyst"],
             "location": "New York, NY",
             "limit": 25,
-            "days_back": 30,
+            "days_back": 90,
         },
         {
-            "name": "Data Science - West Coast",
-            "keywords": ["Data Scientist", "Machine Learning"],
-            "location": "San Francisco, CA",
+            "name": "Data Science US",
+            "keywords": ["Data Scientist", "AI Product Manager",""],
+            "location": "United States",
             "limit": 25,
-            "days_back": 30,
+            "days_back": 90,
         },
         {
-            "name": "Analytics - Financial Centers",
-            "keywords": ["Financial Analyst", "Quantitative Analyst"],
-            "location": "Chicago, IL",
-            "limit": 20,
+            "name": "Analytics -Healthcare",
+            "keywords": ["Financial Analyst", "Population Health Analyst"],
+            "location": "Cleveland, OH",
+            "limit": 30,
             "days_back": 30,
         }
     ]

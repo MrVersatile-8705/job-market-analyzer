@@ -19,6 +19,7 @@ sys.path.insert(0, str(project_root / "src"))
 
 from loguru import logger
 from src.config.settings import Settings
+from src.config.job_search_config import get_working_configs, get_all_job_titles
 from src.data_collection.scrapers.indeed_scraper import IndeedScraper
 from src.ai_analysis.job_analyzer import AIJobAnalyzer
 
@@ -49,41 +50,13 @@ def working_job_analysis():
         logger.error(f"❌ AI initialization failed: {e}")
         ai_enabled = False
     
-    # Define working test scenarios using proven keywords
-    test_scenarios = [
-        {
-            "name": "Data Analyst - Cleveland Market",
-            "keywords": ["Data Analyst"],
-            "location": "Cleveland, OH",
-            "limit": 25,
-            "days_back": 30,
-        },
-        {
-            "name": "Data Analyst - New York Market",
-            "keywords": ["Data Analyst"],
-            "location": "New York, NY",
-            "limit": 25,
-            "days_back": 30,
-        },
-        {
-            "name": "Data Analyst - Remote Positions",
-            "keywords": ["Data Analyst"],
-            "location": "Remote",
-            "limit": 25,
-            "days_back": 30,
-        },
-        {
-            "name": "Business Analyst - National Search",
-            "keywords": ["Business Analyst"],
-            "location": "",
-            "limit": 25,
-            "days_back": 30,
-        }
-    ]
+    # Get comprehensive job search configurations
+    test_scenarios = get_working_configs()
     
-    total_target = sum(scenario['limit'] for scenario in test_scenarios)
-    logger.info(f"📊 Target: {total_target} jobs across {len(test_scenarios)} scenarios")
-    logger.info("⏱️ Estimated time: 60-90 minutes")
+    total_target = sum(scenario.get('limit', 25) for scenario in test_scenarios)
+    logger.info(f"📊 Target: {total_target} jobs across {len(test_scenarios)} comprehensive analytics search scenarios")
+    logger.info(f"🎯 Job titles included: {', '.join(get_all_job_titles()[:5])}... (20 total)")
+    logger.info("⏱️ Estimated time: 90-120 minutes")
     
     # Confirm before proceeding
     proceed = input(f"\nProceed with working analysis ({total_target} jobs)? (y/n): ")

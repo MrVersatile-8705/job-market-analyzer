@@ -1,0 +1,17 @@
+{
+  "total_skills_mentions": 26,
+  "unique_skills": 26,
+  "top_skills": {
+    "SQL": 1,
+    "dbt": 1,
+    "Python": 1,
+    "Business Intelligence": 1,
+    "visualization software": 1,
+    "CRM experience": 1,
+    "analytical problem-solving": 1,
+    "Data aggregation": 1,
+    "Report curation": 1,
+    "Data analysis": 1
+  },
+  "skills_per_job_avg": 5.2
+}

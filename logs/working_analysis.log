@@ -48,3 +48,31 @@
 2025-08-20 22:49:45 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
 2025-08-20 22:49:48 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
 2025-08-20 22:49:48 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Data+Analyst&l=Remote&start=0&sort=date&fromage=30
+2025-08-20 22:50:02 | WARNING  | src.data_collection.scrapers.indeed_scraper:search_jobs:68 - Timeout waiting for job results on page 1
+2025-08-20 22:50:04 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:110 - Indeed search completed. Found 0 job URLs
+2025-08-20 22:50:04 | WARNING  | __main__:process_working_scenario:157 - No jobs found for Data Analyst - Remote Positions
+2025-08-20 22:50:04 | INFO     | __main__:process_working_scenario:160 - 🔄 Trying broader search...
+2025-08-20 22:50:08 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 22:50:08 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=analyst&l=Remote&start=0&sort=date&fromage=30
+2025-08-20 22:50:22 | WARNING  | src.data_collection.scrapers.indeed_scraper:search_jobs:68 - Timeout waiting for job results on page 1
+2025-08-20 22:50:24 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:110 - Indeed search completed. Found 0 job URLs
+2025-08-20 22:50:24 | WARNING  | __main__:process_working_scenario:171 - No jobs found even with broader search
+2025-08-20 22:50:24 | INFO     | __main__:working_job_analysis:107 - ✅ Scenario 3 completed: 0 jobs | Total: 0
+2025-08-20 22:50:27 | INFO     | __main__:working_job_analysis:99 - 
+📊 Scenario 4/4: Business Analyst - National Search
+2025-08-20 22:50:27 | INFO     | __main__:working_job_analysis:100 - --------------------------------------------------
+2025-08-20 22:50:27 | INFO     | __main__:process_working_scenario:146 - 🔍 Searching for 25 jobs...
+2025-08-20 22:50:27 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 22:50:32 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 22:50:32 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Business+Analyst&l=&start=0&sort=date&fromage=30
+2025-08-20 22:50:46 | WARNING  | src.data_collection.scrapers.indeed_scraper:search_jobs:68 - Timeout waiting for job results on page 1
+2025-08-20 22:50:48 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:110 - Indeed search completed. Found 0 job URLs
+2025-08-20 22:50:48 | WARNING  | __main__:process_working_scenario:157 - No jobs found for Business Analyst - National Search
+2025-08-20 22:50:48 | INFO     | __main__:process_working_scenario:160 - 🔄 Trying broader search...
+2025-08-20 22:50:48 | WARNING  | __main__:process_working_scenario:171 - No jobs found even with broader search
+2025-08-20 22:50:48 | INFO     | __main__:working_job_analysis:107 - ✅ Scenario 4 completed: 0 jobs | Total: 0
+2025-08-20 22:50:51 | INFO     | __main__:working_job_analysis:128 - 
+🎉 Working Analysis Complete!
+2025-08-20 22:50:51 | INFO     | __main__:working_job_analysis:129 - ⏱️ Total processing time: 0:02:27.260736
+2025-08-20 22:50:51 | INFO     | __main__:working_job_analysis:130 - 📊 Total jobs collected: 0
+2025-08-20 22:50:51 | WARNING  | __main__:working_job_analysis:140 - ❌ No jobs collected. Check network connection and scraper configuration.
