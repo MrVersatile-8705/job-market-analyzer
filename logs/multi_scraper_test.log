@@ -276,3 +276,153 @@
 2025-08-20 23:46:37 | INFO     | __main__:test_all_scrapers:40 - 🚀 Multi-Scraper Analytics Job Test
 2025-08-20 23:46:37 | INFO     | __main__:test_all_scrapers:41 - ============================================================
 2025-08-20 23:46:37 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-21 00:18:00 | INFO     | __main__:test_all_scrapers:40 - 🚀 Multi-Scraper Analytics Job Test
+2025-08-21 00:18:00 | INFO     | __main__:test_all_scrapers:41 - ============================================================
+2025-08-21 00:18:00 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-21 00:18:00 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized ZipRecruiter scraper
+2025-08-21 00:18:00 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Dice scraper
+2025-08-21 00:18:00 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized StackOverflow scraper
+2025-08-21 00:18:00 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Builtin scraper
+2025-08-21 00:18:00 | INFO     | __main__:test_all_scrapers:74 - 📊 Testing 5 scrapers with 3 configurations
+2025-08-21 00:18:00 | INFO     | __main__:test_all_scrapers:75 - 🎯 Analytics job titles: Data Analyst, Data Scientist, Analytics Engineer, BI Developer, BI Analyst... (20 total)
+2025-08-21 00:18:00 | INFO     | __main__:test_all_scrapers:80 - 
+📋 Test Configuration 1: Core Analytics - Nationwide
+2025-08-21 00:18:00 | INFO     | __main__:test_all_scrapers:81 - Keywords: Data Analyst, Business Analyst, Strategy Analyst
+2025-08-21 00:18:00 | INFO     | __main__:test_all_scrapers:82 - Location: 
+2025-08-21 00:18:00 | INFO     | __main__:test_all_scrapers:83 - Limit: 5 jobs per scraper
+2025-08-21 00:18:00 | INFO     | __main__:test_all_scrapers:84 - --------------------------------------------------
+2025-08-21 00:18:00 | INFO     | __main__:test_all_scrapers:94 - 🔍 Testing Indeed...
+2025-08-21 00:18:04 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-21 00:18:04 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Data+Analyst+OR+Business+Analyst+OR+Strategy+Analyst&l=&start=0&sort=date&fromage=30
+2025-08-21 00:18:17 | WARNING  | src.data_collection.scrapers.indeed_scraper:search_jobs:68 - Timeout waiting for job results on page 1
+2025-08-21 00:18:19 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:110 - Indeed search completed. Found 0 job URLs
+2025-08-21 00:18:19 | WARNING  | __main__:test_all_scrapers:143 - ⚠️ Indeed: No jobs found
+2025-08-21 00:18:21 | INFO     | __main__:test_all_scrapers:94 - 🔍 Testing ZipRecruiter...
+2025-08-21 00:18:25 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for ZipRecruiter
+2025-08-21 00:18:25 | INFO     | src.data_collection.scrapers.ziprecruiter_scraper:search_jobs:53 - Searching ZipRecruiter page 1: https://www.ziprecruiter.com/jobs-search?search=Data+Analyst+OR+Business+Analyst+OR+Strategy+Analyst&location=&page=1&days=30
+2025-08-21 00:18:37 | WARNING  | src.data_collection.scrapers.ziprecruiter_scraper:search_jobs:62 - No job listings found on page 1
+2025-08-21 00:18:40 | INFO     | src.data_collection.scrapers.ziprecruiter_scraper:search_jobs:102 - ZipRecruiter search completed: 0 job URLs found
+2025-08-21 00:18:40 | WARNING  | __main__:test_all_scrapers:143 - ⚠️ ZipRecruiter: No jobs found
+2025-08-21 00:18:42 | INFO     | __main__:test_all_scrapers:94 - 🔍 Testing Dice...
+2025-08-21 00:18:45 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Dice
+2025-08-21 00:18:45 | INFO     | src.data_collection.scrapers.dice_scraper:search_jobs:53 - Searching Dice page 1: https://www.dice.com/jobs?q=Data+Analyst+OR+Business+Analyst+OR+Strategy+Analyst&location=&page=1&postedDate=30
+2025-08-21 00:18:57 | WARNING  | src.data_collection.scrapers.dice_scraper:search_jobs:62 - No job listings found on page 1
+2025-08-21 00:18:59 | INFO     | src.data_collection.scrapers.dice_scraper:search_jobs:105 - Dice search completed: 0 job URLs found
+2025-08-21 00:18:59 | WARNING  | __main__:test_all_scrapers:143 - ⚠️ Dice: No jobs found
+2025-08-21 00:19:01 | INFO     | __main__:test_all_scrapers:94 - 🔍 Testing StackOverflow...
+2025-08-21 00:19:04 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for StackOverflow
+2025-08-21 00:19:04 | INFO     | src.data_collection.scrapers.stackoverflow_scraper:search_jobs:52 - Searching Stack Overflow page 1: https://stackoverflow.com/jobs?q=Data+Analyst+OR+Business+Analyst+OR+Strategy+Analyst&l=&pg=1&d=30
+2025-08-21 00:19:15 | WARNING  | src.data_collection.scrapers.stackoverflow_scraper:search_jobs:61 - No job listings found on page 1
+2025-08-21 00:19:18 | INFO     | src.data_collection.scrapers.stackoverflow_scraper:search_jobs:104 - Stack Overflow search completed: 0 job URLs found
+2025-08-21 00:19:18 | WARNING  | __main__:test_all_scrapers:143 - ⚠️ StackOverflow: No jobs found
+2025-08-21 00:19:20 | INFO     | __main__:test_all_scrapers:94 - 🔍 Testing Builtin...
+2025-08-21 00:19:24 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Builtin
+2025-08-21 00:19:24 | INFO     | src.data_collection.scrapers.builtin_scraper:search_jobs:73 - Searching Builtin page 1: https://builtin.com/jobs?search=Data+Analyst+OR+Business+Analyst+OR+Strategy+Analyst&page=1&datePosted=30
+2025-08-21 00:19:37 | WARNING  | src.data_collection.scrapers.builtin_scraper:search_jobs:82 - No job listings found on page 1
+2025-08-21 00:19:39 | INFO     | src.data_collection.scrapers.builtin_scraper:search_jobs:125 - Builtin search completed: 0 job URLs found
+2025-08-21 00:19:39 | WARNING  | __main__:test_all_scrapers:143 - ⚠️ Builtin: No jobs found
+2025-08-21 00:19:41 | INFO     | __main__:test_all_scrapers:163 - 
+📊 Configuration 1 Summary:
+2025-08-21 00:19:41 | INFO     | __main__:test_all_scrapers:164 -    Total jobs found: 0
+2025-08-21 00:19:41 | INFO     | __main__:test_all_scrapers:165 -    Successful scrapers: 0/5
+2025-08-21 00:19:41 | INFO     | __main__:test_all_scrapers:166 -    Success rate: 0.0%
+2025-08-21 00:19:41 | INFO     | __main__:test_all_scrapers:80 - 
+📋 Test Configuration 2: Data Science - Nationwide
+2025-08-21 00:19:41 | INFO     | __main__:test_all_scrapers:81 - Keywords: Data Scientist, Analytics Engineer
+2025-08-21 00:19:41 | INFO     | __main__:test_all_scrapers:82 - Location: 
+2025-08-21 00:19:41 | INFO     | __main__:test_all_scrapers:83 - Limit: 5 jobs per scraper
+2025-08-21 00:19:41 | INFO     | __main__:test_all_scrapers:84 - --------------------------------------------------
+2025-08-21 00:19:41 | INFO     | __main__:test_all_scrapers:94 - 🔍 Testing Indeed...
+2025-08-21 00:19:44 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-21 00:19:44 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Data+Scientist+OR+Analytics+Engineer&l=&start=0&sort=date&fromage=30
+2025-08-21 00:19:57 | WARNING  | src.data_collection.scrapers.indeed_scraper:search_jobs:68 - Timeout waiting for job results on page 1
+2025-08-21 00:19:59 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:110 - Indeed search completed. Found 0 job URLs
+2025-08-21 00:19:59 | WARNING  | __main__:test_all_scrapers:143 - ⚠️ Indeed: No jobs found
+2025-08-21 00:20:01 | INFO     | __main__:test_all_scrapers:94 - 🔍 Testing ZipRecruiter...
+2025-08-21 00:20:04 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for ZipRecruiter
+2025-08-21 00:20:04 | INFO     | src.data_collection.scrapers.ziprecruiter_scraper:search_jobs:53 - Searching ZipRecruiter page 1: https://www.ziprecruiter.com/jobs-search?search=Data+Scientist+OR+Analytics+Engineer&location=&page=1&days=30
+2025-08-21 00:20:17 | WARNING  | src.data_collection.scrapers.ziprecruiter_scraper:search_jobs:62 - No job listings found on page 1
+2025-08-21 00:20:19 | INFO     | src.data_collection.scrapers.ziprecruiter_scraper:search_jobs:102 - ZipRecruiter search completed: 0 job URLs found
+2025-08-21 00:20:19 | WARNING  | __main__:test_all_scrapers:143 - ⚠️ ZipRecruiter: No jobs found
+2025-08-21 00:20:21 | INFO     | __main__:test_all_scrapers:94 - 🔍 Testing Dice...
+2025-08-21 00:20:24 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Dice
+2025-08-21 00:20:24 | INFO     | src.data_collection.scrapers.dice_scraper:search_jobs:53 - Searching Dice page 1: https://www.dice.com/jobs?q=Data+Scientist+OR+Analytics+Engineer&location=&page=1&postedDate=30
+2025-08-21 00:20:37 | WARNING  | src.data_collection.scrapers.dice_scraper:search_jobs:62 - No job listings found on page 1
+2025-08-21 00:20:39 | INFO     | src.data_collection.scrapers.dice_scraper:search_jobs:105 - Dice search completed: 0 job URLs found
+2025-08-21 00:20:39 | WARNING  | __main__:test_all_scrapers:143 - ⚠️ Dice: No jobs found
+2025-08-21 00:20:41 | INFO     | __main__:test_all_scrapers:94 - 🔍 Testing StackOverflow...
+2025-08-21 00:20:44 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for StackOverflow
+2025-08-21 00:20:44 | INFO     | src.data_collection.scrapers.stackoverflow_scraper:search_jobs:52 - Searching Stack Overflow page 1: https://stackoverflow.com/jobs?q=Data+Scientist+OR+Analytics+Engineer&l=&pg=1&d=30
+2025-08-21 00:20:56 | WARNING  | src.data_collection.scrapers.stackoverflow_scraper:search_jobs:61 - No job listings found on page 1
+2025-08-21 00:20:59 | INFO     | src.data_collection.scrapers.stackoverflow_scraper:search_jobs:104 - Stack Overflow search completed: 0 job URLs found
+2025-08-21 00:20:59 | WARNING  | __main__:test_all_scrapers:143 - ⚠️ StackOverflow: No jobs found
+2025-08-21 00:21:01 | INFO     | __main__:test_all_scrapers:94 - 🔍 Testing Builtin...
+2025-08-21 00:21:04 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Builtin
+2025-08-21 00:21:04 | INFO     | src.data_collection.scrapers.builtin_scraper:search_jobs:73 - Searching Builtin page 1: https://builtin.com/jobs?search=Data+Scientist+OR+Analytics+Engineer&page=1&datePosted=30
+2025-08-21 00:21:16 | WARNING  | src.data_collection.scrapers.builtin_scraper:search_jobs:82 - No job listings found on page 1
+2025-08-21 00:21:18 | INFO     | src.data_collection.scrapers.builtin_scraper:search_jobs:125 - Builtin search completed: 0 job URLs found
+2025-08-21 00:21:18 | WARNING  | __main__:test_all_scrapers:143 - ⚠️ Builtin: No jobs found
+2025-08-21 00:21:20 | INFO     | __main__:test_all_scrapers:163 - 
+📊 Configuration 2 Summary:
+2025-08-21 00:21:20 | INFO     | __main__:test_all_scrapers:164 -    Total jobs found: 0
+2025-08-21 00:21:20 | INFO     | __main__:test_all_scrapers:165 -    Successful scrapers: 0/5
+2025-08-21 00:21:20 | INFO     | __main__:test_all_scrapers:166 -    Success rate: 0.0%
+2025-08-21 00:21:20 | INFO     | __main__:test_all_scrapers:80 - 
+📋 Test Configuration 3: BI Roles - Nationwide
+2025-08-21 00:21:20 | INFO     | __main__:test_all_scrapers:81 - Keywords: BI Developer, BI Analyst, Business Intelligence Analyst
+2025-08-21 00:21:20 | INFO     | __main__:test_all_scrapers:82 - Location: 
+2025-08-21 00:21:20 | INFO     | __main__:test_all_scrapers:83 - Limit: 5 jobs per scraper
+2025-08-21 00:21:20 | INFO     | __main__:test_all_scrapers:84 - --------------------------------------------------
+2025-08-21 00:21:20 | INFO     | __main__:test_all_scrapers:94 - 🔍 Testing Indeed...
+2025-08-21 00:21:24 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-21 00:21:24 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=BI+Developer+OR+BI+Analyst+OR+Business+Intelligence+Analyst&l=&start=0&sort=date&fromage=30
+2025-08-21 00:21:38 | WARNING  | src.data_collection.scrapers.indeed_scraper:search_jobs:68 - Timeout waiting for job results on page 1
+2025-08-21 00:21:40 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:110 - Indeed search completed. Found 0 job URLs
+2025-08-21 00:21:40 | WARNING  | __main__:test_all_scrapers:143 - ⚠️ Indeed: No jobs found
+2025-08-21 00:21:42 | INFO     | __main__:test_all_scrapers:94 - 🔍 Testing ZipRecruiter...
+2025-08-21 00:21:47 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for ZipRecruiter
+2025-08-21 00:21:47 | INFO     | src.data_collection.scrapers.ziprecruiter_scraper:search_jobs:53 - Searching ZipRecruiter page 1: https://www.ziprecruiter.com/jobs-search?search=BI+Developer+OR+BI+Analyst+OR+Business+Intelligence+Analyst&location=&page=1&days=30
+2025-08-21 00:21:59 | WARNING  | src.data_collection.scrapers.ziprecruiter_scraper:search_jobs:62 - No job listings found on page 1
+2025-08-21 00:22:02 | INFO     | src.data_collection.scrapers.ziprecruiter_scraper:search_jobs:102 - ZipRecruiter search completed: 0 job URLs found
+2025-08-21 00:22:02 | WARNING  | __main__:test_all_scrapers:143 - ⚠️ ZipRecruiter: No jobs found
+2025-08-21 00:22:04 | INFO     | __main__:test_all_scrapers:94 - 🔍 Testing Dice...
+2025-08-21 00:22:08 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Dice
+2025-08-21 00:22:08 | INFO     | src.data_collection.scrapers.dice_scraper:search_jobs:53 - Searching Dice page 1: https://www.dice.com/jobs?q=BI+Developer+OR+BI+Analyst+OR+Business+Intelligence+Analyst&location=&page=1&postedDate=30
+2025-08-21 00:22:20 | WARNING  | src.data_collection.scrapers.dice_scraper:search_jobs:62 - No job listings found on page 1
+2025-08-21 00:22:22 | INFO     | src.data_collection.scrapers.dice_scraper:search_jobs:105 - Dice search completed: 0 job URLs found
+2025-08-21 00:22:22 | WARNING  | __main__:test_all_scrapers:143 - ⚠️ Dice: No jobs found
+2025-08-21 00:22:24 | INFO     | __main__:test_all_scrapers:94 - 🔍 Testing StackOverflow...
+2025-08-21 00:22:29 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for StackOverflow
+2025-08-21 00:22:29 | INFO     | src.data_collection.scrapers.stackoverflow_scraper:search_jobs:52 - Searching Stack Overflow page 1: https://stackoverflow.com/jobs?q=BI+Developer+OR+BI+Analyst+OR+Business+Intelligence+Analyst&l=&pg=1&d=30
+2025-08-21 00:22:40 | WARNING  | src.data_collection.scrapers.stackoverflow_scraper:search_jobs:61 - No job listings found on page 1
+2025-08-21 00:22:43 | INFO     | src.data_collection.scrapers.stackoverflow_scraper:search_jobs:104 - Stack Overflow search completed: 0 job URLs found
+2025-08-21 00:22:43 | WARNING  | __main__:test_all_scrapers:143 - ⚠️ StackOverflow: No jobs found
+2025-08-21 00:22:45 | INFO     | __main__:test_all_scrapers:94 - 🔍 Testing Builtin...
+2025-08-21 00:22:49 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Builtin
+2025-08-21 00:22:49 | INFO     | src.data_collection.scrapers.builtin_scraper:search_jobs:73 - Searching Builtin page 1: https://builtin.com/jobs?search=BI+Developer+OR+BI+Analyst+OR+Business+Intelligence+Analyst&page=1&datePosted=30
+2025-08-21 00:23:01 | WARNING  | src.data_collection.scrapers.builtin_scraper:search_jobs:82 - No job listings found on page 1
+2025-08-21 00:23:04 | INFO     | src.data_collection.scrapers.builtin_scraper:search_jobs:125 - Builtin search completed: 0 job URLs found
+2025-08-21 00:23:04 | WARNING  | __main__:test_all_scrapers:143 - ⚠️ Builtin: No jobs found
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:163 - 
+📊 Configuration 3 Summary:
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:164 -    Total jobs found: 0
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:165 -    Successful scrapers: 0/5
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:166 -    Success rate: 0.0%
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:169 - 
+============================================================
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:170 - 🎯 FINAL MULTI-SCRAPER TEST RESULTS
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:171 - ============================================================
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:177 - 📊 Overall Statistics:
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:178 -    Total jobs found: 0
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:179 -    Successful tests: 0/15
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:180 -    Overall success rate: 0.0%
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:183 - 
+🏆 Scraper Performance Summary:
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:207 -    Indeed      :   0 jobs |   0.0% success |  19.4s avg
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:207 -    ZipRecruiter:   0 jobs |   0.0% success |  18.5s avg
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:207 -    Dice        :   0 jobs |   0.0% success |  17.7s avg
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:207 -    StackOverflow:   0 jobs |   0.0% success |  17.6s avg
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:207 -    Builtin     :   0 jobs |   0.0% success |  18.7s avg
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:258 - 
+💾 Results saved to: data/results/multi_scraper_test_20250821_002306.json
+2025-08-21 00:23:06 | INFO     | __main__:test_all_scrapers:259 - 🎉 Multi-scraper test completed!

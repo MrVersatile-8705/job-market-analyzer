@@ -1,0 +1,273 @@
+{
+  "test_timestamp": "20250821_002306",
+  "test_configs": [
+    {
+      "name": "Core Analytics - Nationwide",
+      "keywords": [
+        "Data Analyst",
+        "Business Analyst",
+        "Strategy Analyst"
+      ],
+      "location": "",
+      "limit": 5
+    },
+    {
+      "name": "Data Science - Nationwide",
+      "keywords": [
+        "Data Scientist",
+        "Analytics Engineer"
+      ],
+      "location": "",
+      "limit": 5
+    },
+    {
+      "name": "BI Roles - Nationwide",
+      "keywords": [
+        "BI Developer",
+        "BI Analyst",
+        "Business Intelligence Analyst"
+      ],
+      "location": "",
+      "limit": 5
+    }
+  ],
+  "scraper_names": [
+    "Indeed",
+    "ZipRecruiter",
+    "Dice",
+    "StackOverflow",
+    "Builtin"
+  ],
+  "results": [
+    {
+      "config": {
+        "name": "Core Analytics - Nationwide",
+        "keywords": [
+          "Data Analyst",
+          "Business Analyst",
+          "Strategy Analyst"
+        ],
+        "location": "",
+        "limit": 5
+      },
+      "total_jobs": 0,
+      "successful_scrapers": 0,
+      "scraper_results": {
+        "Indeed": {
+          "job_count": 0,
+          "search_time": 19.54,
+          "status": "no_results",
+          "error": null,
+          "sample_job": null,
+          "job_urls": []
+        },
+        "ZipRecruiter": {
+          "job_count": 0,
+          "search_time": 18.23,
+          "status": "no_results",
+          "error": null,
+          "sample_job": null,
+          "job_urls": []
+        },
+        "Dice": {
+          "job_count": 0,
+          "search_time": 17.08,
+          "status": "no_results",
+          "error": null,
+          "sample_job": null,
+          "job_urls": []
+        },
+        "StackOverflow": {
+          "job_count": 0,
+          "search_time": 16.76,
+          "status": "no_results",
+          "error": null,
+          "sample_job": null,
+          "job_urls": []
+        },
+        "Builtin": {
+          "job_count": 0,
+          "search_time": 19.63,
+          "status": "no_results",
+          "error": null,
+          "sample_job": null,
+          "job_urls": []
+        }
+      }
+    },
+    {
+      "config": {
+        "name": "Data Science - Nationwide",
+        "keywords": [
+          "Data Scientist",
+          "Analytics Engineer"
+        ],
+        "location": "",
+        "limit": 5
+      },
+      "total_jobs": 0,
+      "successful_scrapers": 0,
+      "scraper_results": {
+        "Indeed": {
+          "job_count": 0,
+          "search_time": 18.18,
+          "status": "no_results",
+          "error": null,
+          "sample_job": null,
+          "job_urls": []
+        },
+        "ZipRecruiter": {
+          "job_count": 0,
+          "search_time": 17.82,
+          "status": "no_results",
+          "error": null,
+          "sample_job": null,
+          "job_urls": []
+        },
+        "Dice": {
+          "job_count": 0,
+          "search_time": 17.81,
+          "status": "no_results",
+          "error": null,
+          "sample_job": null,
+          "job_urls": []
+        },
+        "StackOverflow": {
+          "job_count": 0,
+          "search_time": 17.55,
+          "status": "no_results",
+          "error": null,
+          "sample_job": null,
+          "job_urls": []
+        },
+        "Builtin": {
+          "job_count": 0,
+          "search_time": 17.29,
+          "status": "no_results",
+          "error": null,
+          "sample_job": null,
+          "job_urls": []
+        }
+      }
+    },
+    {
+      "config": {
+        "name": "BI Roles - Nationwide",
+        "keywords": [
+          "BI Developer",
+          "BI Analyst",
+          "Business Intelligence Analyst"
+        ],
+        "location": "",
+        "limit": 5
+      },
+      "total_jobs": 0,
+      "successful_scrapers": 0,
+      "scraper_results": {
+        "Indeed": {
+          "job_count": 0,
+          "search_time": 20.53,
+          "status": "no_results",
+          "error": null,
+          "sample_job": null,
+          "job_urls": []
+        },
+        "ZipRecruiter": {
+          "job_count": 0,
+          "search_time": 19.48,
+          "status": "no_results",
+          "error": null,
+          "sample_job": null,
+          "job_urls": []
+        },
+        "Dice": {
+          "job_count": 0,
+          "search_time": 18.35,
+          "status": "no_results",
+          "error": null,
+          "sample_job": null,
+          "job_urls": []
+        },
+        "StackOverflow": {
+          "job_count": 0,
+          "search_time": 18.43,
+          "status": "no_results",
+          "error": null,
+          "sample_job": null,
+          "job_urls": []
+        },
+        "Builtin": {
+          "job_count": 0,
+          "search_time": 19.08,
+          "status": "no_results",
+          "error": null,
+          "sample_job": null,
+          "job_urls": []
+        }
+      }
+    }
+  ],
+  "summary": {
+    "total_jobs_found": 0,
+    "successful_tests": 0,
+    "total_possible_tests": 15,
+    "overall_success_rate": 0.0,
+    "scraper_performance": {
+      "Indeed": {
+        "total_jobs": 0,
+        "successful_searches": 0,
+        "total_searches": 3,
+        "avg_search_time": 0,
+        "search_times": [
+          19.54,
+          18.18,
+          20.53
+        ]
+      },
+      "ZipRecruiter": {
+        "total_jobs": 0,
+        "successful_searches": 0,
+        "total_searches": 3,
+        "avg_search_time": 0,
+        "search_times": [
+          18.23,
+          17.82,
+          19.48
+        ]
+      },
+      "Dice": {
+        "total_jobs": 0,
+        "successful_searches": 0,
+        "total_searches": 3,
+        "avg_search_time": 0,
+        "search_times": [
+          17.08,
+          17.81,
+          18.35
+        ]
+      },
+      "StackOverflow": {
+        "total_jobs": 0,
+        "successful_searches": 0,
+        "total_searches": 3,
+        "avg_search_time": 0,
+        "search_times": [
+          16.76,
+          17.55,
+          18.43
+        ]
+      },
+      "Builtin": {
+        "total_jobs": 0,
+        "successful_searches": 0,
+        "total_searches": 3,
+        "avg_search_time": 0,
+        "search_times": [
+          19.63,
+          17.29,
+          19.08
+        ]
+      }
+    }
+  }
+}
