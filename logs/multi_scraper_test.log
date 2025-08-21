@@ -273,3 +273,6 @@
 2025-08-20 22:06:21 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:58 - Searching LinkedIn page 1: https://www.linkedin.com/jobs/search?keywords=Data+Science+Data+Scientist&location=&start=0&sortBy=DD&f_TPR=r2592000
 2025-08-20 22:06:28 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:93 - Found 0 jobs on LinkedIn page 1, total: 0
 2025-08-20 22:06:28 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:103 - No next page found on LinkedIn, ending search
+2025-08-20 23:46:37 | INFO     | __main__:test_all_scrapers:40 - 🚀 Multi-Scraper Analytics Job Test
+2025-08-20 23:46:37 | INFO     | __main__:test_all_scrapers:41 - ============================================================
+2025-08-20 23:46:37 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper

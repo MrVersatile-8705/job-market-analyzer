@@ -2,6 +2,7 @@
 """
 Comprehensive Job Search Configuration
 Contains all job titles and search strategies for enhanced job market analysis
+Supports multiple scrapers: Indeed, ZipRecruiter, Dice, StackOverflow, Builtin
 """
 
 # Comprehensive list of analytics and data-related job titles
@@ -28,6 +29,40 @@ ANALYTICS_JOB_TITLES = [
     "Insights Analyst",
     "Performance Analyst"
 ]
+
+# Available scraper platforms
+AVAILABLE_SCRAPERS = {
+    "indeed": {
+        "name": "Indeed",
+        "class": "IndeedScraper",
+        "strengths": ["High volume", "All experience levels", "Geographic coverage"],
+        "best_for": ["General analytics roles", "Entry to mid-level positions"]
+    },
+    "ziprecruiter": {
+        "name": "ZipRecruiter", 
+        "class": "ZipRecruiterScraper",
+        "strengths": ["Large volume", "Quick application process", "Mobile-first"],
+        "best_for": ["Quick-fill positions", "SMB companies", "Contract work"]
+    },
+    "dice": {
+        "name": "Dice",
+        "class": "DiceScraper", 
+        "strengths": ["Tech-focused", "High salaries", "Contract opportunities"],
+        "best_for": ["Data engineering", "Technical analytics", "Contract positions"]
+    },
+    "stackoverflow": {
+        "name": "StackOverflow",
+        "class": "StackOverflowScraper",
+        "strengths": ["Developer-focused", "High-quality roles", "Startup to enterprise"],
+        "best_for": ["Technical data roles", "Engineering-adjacent positions"]
+    },
+    "builtin": {
+        "name": "Builtin",
+        "class": "BuiltinScraper",
+        "strengths": ["Startup ecosystem", "Equity compensation", "Growth companies"],
+        "best_for": ["Startup analytics", "Product analytics", "Growth-stage companies"]
+    }
+}
 
 # Grouped search strategies for different scenarios
 SEARCH_SCENARIOS = {
@@ -183,6 +218,24 @@ FOCUSED_TEST_CONFIGS = [
 def get_all_job_titles():
     """Get the complete list of analytics job titles."""
     return ANALYTICS_JOB_TITLES
+
+def get_available_scrapers():
+    """Get information about all available scrapers."""
+    return AVAILABLE_SCRAPERS
+
+def get_scrapers_for_role_type(role_type):
+    """Get recommended scrapers for specific role types."""
+    scraper_recommendations = {
+        "entry_level": ["indeed", "ziprecruiter"],
+        "senior_level": ["dice", "stackoverflow", "builtin"],
+        "technical": ["dice", "stackoverflow"],
+        "startup": ["builtin", "stackoverflow"],
+        "enterprise": ["indeed", "dice"],
+        "contract": ["dice", "ziprecruiter"],
+        "remote": ["stackoverflow", "ziprecruiter", "builtin"],
+        "all": list(AVAILABLE_SCRAPERS.keys())
+    }
+    return scraper_recommendations.get(role_type, scraper_recommendations["all"])
 
 def get_search_scenario(scenario_name):
     """Get search configuration for a specific scenario."""
