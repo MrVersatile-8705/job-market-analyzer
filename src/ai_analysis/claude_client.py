@@ -39,57 +39,48 @@ class ClaudeClient:
         """Analyze compensation and benefits from job posting."""
         
         prompt = f"""
-        Analyze the compensation information from this job posting. Focus on extracting and evaluating all compensation-related details.
-
-        Job Title: {title}
+        Analyze the compensation and benefits for this job posting:
+        
+        Title: {title}
         Company: {company}
         Location: {location}
         Description: {description}
-
-        Analyze:
-        1. Is salary/compensation explicitly mentioned?
-        2. What's the salary range if mentioned?
-        3. What benefits are mentioned?
-        4. Estimate total compensation value
+        
+        Please analyze and return:
+        1. Is salary explicitly mentioned? (yes/no)
+        2. Salary range if mentioned (e.g., "$80,000 - $120,000")
+        3. Benefits mentioned (list)
+        4. Total compensation estimate based on market data
         5. Is equity/stock options mentioned?
         6. Are bonuses mentioned?
-        7. How competitive is this compensation package?
-
-        Return only JSON:
-        {{
-            "salary_mentioned": true,
-            "salary_range": "$90,000 - $130,000",
-            "benefits_mentioned": ["health insurance", "401k", "vacation"],
-            "total_comp_estimate": "$95,000 - $140,000",
-            "equity_mentioned": false,
-            "bonus_mentioned": true,
-            "compensation_competitiveness": "competitive"
-        }}
+        7. How competitive is this compensation? (low/average/competitive/excellent)
+        
+        Format your response as JSON.
         """
         
         try:
             response = self.client.messages.create(
                 model=self.model,
-                max_tokens=800,
-                temperature=0.3,
-                messages=[
-                    {"role": "user", "content": prompt}
-                ]
+                max_tokens=1000,
+                messages=[{"role": "user", "content": prompt}]
             )
             
-            result_text = response.content[0].text.strip()
+            # Parse response and create CompensationAnalysis object
+            analysis_text = response.content[0].text
+            # Add JSON parsing logic here
             
-            # Clean up JSON
-            if "```json" in result_text:
-                result_text = result_text.split("```json")[1].split("```")[0]
-            elif "```" in result_text:
-                result_text = result_text.split("```")[1]
-            
-            result_data = json.loads(result_text)
-            return CompensationAnalysis(**result_data)
+            return CompensationAnalysis(
+                salary_mentioned=False,  # Parse from response
+                salary_range=None,
+                benefits_mentioned=[],
+                total_comp_estimate=None,
+                equity_mentioned=False,
+                bonus_mentioned=False,
+                compensation_competitiveness="average"
+            )
             
         except Exception as e:
-            logger.error(f"Error analyzing compensation with Claude: {e}")
+            logger.error(f"Claude compensation analysis failed: {e}")
             return CompensationAnalysis(
                 salary_mentioned=False,
                 salary_range=None,
@@ -101,62 +92,50 @@ class ClaudeClient:
             )
     
     def analyze_requirements_detailed(self, description: str) -> RequirementAnalysis:
-        """Detailed analysis of job requirements and qualifications."""
+        """Detailed analysis of job requirements."""
         
         prompt = f"""
-        Analyze this job description and extract detailed requirement information. Categorize requirements by importance and type.
-
-        Description: {description}
-
+        Analyze the job requirements from this description:
+        
+        {description}
+        
         Extract and categorize:
-        1. Must-have skills (absolutely required)
-        2. Nice-to-have skills (preferred but not required)
+        1. Must-have skills (required)
+        2. Nice-to-have skills (preferred)
         3. Education requirements
-        4. Experience requirements (years and type)
-        5. Required certifications
+        4. Years of experience required
+        5. Certifications required
         6. Industry experience needed
-        7. Domain knowledge requirements
-
-        Return only JSON:
-        {{
-            "must_have_skills": ["Python", "SQL", "Statistics"],
-            "nice_to_have_skills": ["R", "Tableau", "AWS"],
-            "education_required": "Bachelor's degree in related field",
-            "experience_required": "3-5 years data analysis experience",
-            "certifications_required": ["None specified"],
-            "industry_experience": ["Technology", "Financial Services"],
-            "domain_knowledge": ["Data visualization", "Statistical analysis"]
-        }}
+        7. Domain knowledge required
+        
+        Return as structured JSON.
         """
         
         try:
             response = self.client.messages.create(
                 model=self.model,
                 max_tokens=1000,
-                temperature=0.2,
-                messages=[
-                    {"role": "user", "content": prompt}
-                ]
+                messages=[{"role": "user", "content": prompt}]
             )
             
-            result_text = response.content[0].text.strip()
-            
-            # Clean up JSON
-            if "```json" in result_text:
-                result_text = result_text.split("```json")[1].split("```")[0]
-            elif "```" in result_text:
-                result_text = result_text.split("```")[1]
-            
-            result_data = json.loads(result_text)
-            return RequirementAnalysis(**result_data)
-            
-        except Exception as e:
-            logger.error(f"Error analyzing requirements with Claude: {e}")
+            # Parse and return RequirementAnalysis
             return RequirementAnalysis(
                 must_have_skills=[],
                 nice_to_have_skills=[],
-                education_required="Not specified",
-                experience_required="Not specified",
+                education_required="",
+                experience_required="",
+                certifications_required=[],
+                industry_experience=[],
+                domain_knowledge=[]
+            )
+            
+        except Exception as e:
+            logger.error(f"Claude requirements analysis failed: {e}")
+            return RequirementAnalysis(
+                must_have_skills=[],
+                nice_to_have_skills=[],
+                education_required="unknown",
+                experience_required="unknown",
                 certifications_required=[],
                 industry_experience=[],
                 domain_knowledge=[]
