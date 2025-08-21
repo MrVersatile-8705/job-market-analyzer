@@ -1,0 +1,48 @@
+{
+  "summary": {
+    "total_jobs": 5,
+    "avg_confidence_score": 0.15000000000000002,
+    "quality_distribution": {
+      "limited": 5
+    },
+    "top_skills": [],
+    "salary_ranges": []
+  },
+  "job_summaries": [
+    {
+      "title": "Senior Staff Data Scientist, Machine Learning",
+      "company": "SoFi",
+      "confidence_score": 0.15000000000000002,
+      "quality": "limited",
+      "key_highlights": []
+    },
+    {
+      "title": "Senior Certinia Solutions Specialist",
+      "company": "MMC Corporate",
+      "confidence_score": 0.15000000000000002,
+      "quality": "limited",
+      "key_highlights": []
+    },
+    {
+      "title": "Remote AI Task Contributor – Work From Home (Flexible Hours)",
+      "company": "ICAMP",
+      "confidence_score": 0.15000000000000002,
+      "quality": "limited",
+      "key_highlights": []
+    },
+    {
+      "title": "Data Analyst",
+      "company": "Bluesight",
+      "confidence_score": 0.15000000000000002,
+      "quality": "limited",
+      "key_highlights": []
+    },
+    {
+      "title": "Sr Analyst-Advanced Analytics & BI",
+      "company": "Disney Experiences",
+      "confidence_score": 0.15000000000000002,
+      "quality": "limited",
+      "key_highlights": []
+    }
+  ]
+}

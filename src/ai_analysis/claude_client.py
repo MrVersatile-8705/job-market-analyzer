@@ -15,6 +15,8 @@ class CompensationAnalysis:
     equity_mentioned: bool
     bonus_mentioned: bool
     compensation_competitiveness: str  # low/average/competitive/excellent
+    market_position: str = "unknown"  # For backward compatibility
+    compensation_score: int = 5  # Default score out of 10
 
 @dataclass
 class RequirementAnalysis:
@@ -77,7 +79,39 @@ class ClaudeClient:
                 result_text = result_text.split("```")[1]
             
             result_data = json.loads(result_text)
-            return CompensationAnalysis(**result_data)
+            
+            # Map any alternative field names that Claude might return
+            field_mapping = {
+                'salary_explicitly_mentioned': 'salary_mentioned',
+                'salary_range_mentioned': 'salary_mentioned',
+                'market_position': 'compensation_competitiveness',
+                'compensation_score': 'compensation_competitiveness'
+            }
+            
+            # Apply field mapping
+            mapped_data = {}
+            for key, value in result_data.items():
+                mapped_key = field_mapping.get(key, key)
+                mapped_data[mapped_key] = value
+            
+            # Ensure required fields exist with defaults
+            defaults = {
+                'salary_mentioned': False,
+                'salary_range': None,
+                'benefits_mentioned': [],
+                'total_comp_estimate': None,
+                'equity_mentioned': False,
+                'bonus_mentioned': False,
+                'compensation_competitiveness': 'unknown',
+                'market_position': 'unknown',
+                'compensation_score': 5
+            }
+            
+            for key, default_value in defaults.items():
+                if key not in mapped_data:
+                    mapped_data[key] = default_value
+            
+            return CompensationAnalysis(**{k: v for k, v in mapped_data.items() if k in defaults})
             
         except Exception as e:
             logger.error(f"Claude compensation analysis failed: {e}")
@@ -130,7 +164,37 @@ class ClaudeClient:
                 result_text = result_text.split("```")[1]
             
             result_data = json.loads(result_text)
-            return RequirementAnalysis(**result_data)
+            
+            # Map any alternative field names that Claude might return
+            field_mapping = {
+                'education_requirements': 'education_required',
+                'education': 'education_required',
+                'experience_requirements': 'experience_required',
+                'years_experience': 'experience_required'
+            }
+            
+            # Apply field mapping
+            mapped_data = {}
+            for key, value in result_data.items():
+                mapped_key = field_mapping.get(key, key)
+                mapped_data[mapped_key] = value
+            
+            # Ensure required fields exist with defaults
+            defaults = {
+                'must_have_skills': [],
+                'nice_to_have_skills': [],
+                'education_required': 'unknown',
+                'experience_required': 'unknown',
+                'certifications_required': [],
+                'industry_experience': [],
+                'domain_knowledge': []
+            }
+            
+            for key, default_value in defaults.items():
+                if key not in mapped_data:
+                    mapped_data[key] = default_value
+            
+            return RequirementAnalysis(**{k: v for k, v in mapped_data.items() if k in defaults})
             
         except Exception as e:
             logger.error(f"Claude requirements analysis failed: {e}")

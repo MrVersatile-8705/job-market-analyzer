@@ -214,3 +214,62 @@
 2025-08-20 21:38:10 | INFO     | __main__:test_multi_scraper_system:369 - 
 🎯 System Status Report
 2025-08-20 21:38:10 | INFO     | __main__:test_multi_scraper_system:370 - ==============================
+2025-08-20 22:04:50 | INFO     | __main__:test_multi_scraper_system:55 - 🚀 Multi-Scraper Test with AI Integration
+2025-08-20 22:04:50 | INFO     | __main__:test_multi_scraper_system:56 - ============================================================
+2025-08-20 22:04:50 | INFO     | __main__:test_multi_scraper_system:63 - 🤖 AI Analysis: ENABLED
+2025-08-20 22:04:50 | INFO     | src.ai_analysis.job_analyzer:__init__:61 - OpenAI client initialized
+2025-08-20 22:04:50 | INFO     | src.ai_analysis.job_analyzer:__init__:68 - Claude client initialized
+2025-08-20 22:04:50 | INFO     | __main__:test_multi_scraper_system:106 - 
+📊 Scenario 1: Remote Data Analyst Jobs - Past Month
+2025-08-20 22:04:50 | INFO     | __main__:test_multi_scraper_system:107 - --------------------------------------------------
+2025-08-20 22:04:50 | INFO     | __main__:test_multi_scraper_system:114 - 🔍 Testing Indeed scraper...
+2025-08-20 22:04:50 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 22:04:53 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 22:04:53 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Data+Analyst+OR+Remote&l=&start=0&sort=date&fromage=30
+2025-08-20 22:05:07 | WARNING  | src.data_collection.scrapers.indeed_scraper:search_jobs:68 - Timeout waiting for job results on page 1
+2025-08-20 22:05:09 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:110 - Indeed search completed. Found 0 job URLs
+2025-08-20 22:05:09 | WARNING  | __main__:test_multi_scraper_system:128 - No jobs found from Indeed
+2025-08-20 22:05:09 | INFO     | __main__:test_multi_scraper_system:132 - 🔍 Testing LinkedIn scraper...
+2025-08-20 22:05:09 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized LinkedIn scraper
+2025-08-20 22:05:14 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for LinkedIn
+2025-08-20 22:05:14 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:58 - Searching LinkedIn page 1: https://www.linkedin.com/jobs/search?keywords=Data+Analyst+Remote&location=&start=0&sortBy=DD&f_TPR=r2592000
+2025-08-20 22:05:20 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:93 - Found 0 jobs on LinkedIn page 1, total: 0
+2025-08-20 22:05:20 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:103 - No next page found on LinkedIn, ending search
+2025-08-20 22:05:22 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:113 - LinkedIn search completed. Found 0 job URLs
+2025-08-20 22:05:22 | WARNING  | __main__:test_multi_scraper_system:148 - No jobs found from LinkedIn
+2025-08-20 22:05:22 | WARNING  | __main__:test_multi_scraper_system:154 - No jobs found for scenario 1
+2025-08-20 22:05:22 | INFO     | __main__:test_multi_scraper_system:106 - 
+📊 Scenario 2: Business Intelligence - Major Cities - Past Month
+2025-08-20 22:05:22 | INFO     | __main__:test_multi_scraper_system:107 - --------------------------------------------------
+2025-08-20 22:05:22 | INFO     | __main__:test_multi_scraper_system:114 - 🔍 Testing Indeed scraper...
+2025-08-20 22:05:22 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 22:05:27 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 22:05:27 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Business+Intelligence+OR+BI&l=New+York%2C+NY&start=0&sort=date&fromage=30
+2025-08-20 22:05:40 | WARNING  | src.data_collection.scrapers.indeed_scraper:search_jobs:68 - Timeout waiting for job results on page 1
+2025-08-20 22:05:42 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:110 - Indeed search completed. Found 0 job URLs
+2025-08-20 22:05:42 | WARNING  | __main__:test_multi_scraper_system:128 - No jobs found from Indeed
+2025-08-20 22:05:42 | INFO     | __main__:test_multi_scraper_system:132 - 🔍 Testing LinkedIn scraper...
+2025-08-20 22:05:42 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized LinkedIn scraper
+2025-08-20 22:05:47 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for LinkedIn
+2025-08-20 22:05:47 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:58 - Searching LinkedIn page 1: https://www.linkedin.com/jobs/search?keywords=Business+Intelligence+BI&location=New+York%2C+NY&start=0&sortBy=DD&f_TPR=r2592000
+2025-08-20 22:05:53 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:93 - Found 0 jobs on LinkedIn page 1, total: 0
+2025-08-20 22:05:53 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:103 - No next page found on LinkedIn, ending search
+2025-08-20 22:05:56 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:113 - LinkedIn search completed. Found 0 job URLs
+2025-08-20 22:05:56 | WARNING  | __main__:test_multi_scraper_system:148 - No jobs found from LinkedIn
+2025-08-20 22:05:56 | WARNING  | __main__:test_multi_scraper_system:154 - No jobs found for scenario 2
+2025-08-20 22:05:56 | INFO     | __main__:test_multi_scraper_system:106 - 
+📊 Scenario 3: Data Science - Remote Opportunities
+2025-08-20 22:05:56 | INFO     | __main__:test_multi_scraper_system:107 - --------------------------------------------------
+2025-08-20 22:05:56 | INFO     | __main__:test_multi_scraper_system:114 - 🔍 Testing Indeed scraper...
+2025-08-20 22:05:56 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 22:06:00 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 22:06:00 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Data+Science+OR+Data+Scientist&l=&start=0&sort=date&fromage=30
+2025-08-20 22:06:15 | WARNING  | src.data_collection.scrapers.indeed_scraper:search_jobs:68 - Timeout waiting for job results on page 1
+2025-08-20 22:06:17 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:110 - Indeed search completed. Found 0 job URLs
+2025-08-20 22:06:17 | WARNING  | __main__:test_multi_scraper_system:128 - No jobs found from Indeed
+2025-08-20 22:06:17 | INFO     | __main__:test_multi_scraper_system:132 - 🔍 Testing LinkedIn scraper...
+2025-08-20 22:06:17 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized LinkedIn scraper
+2025-08-20 22:06:21 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for LinkedIn
+2025-08-20 22:06:21 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:58 - Searching LinkedIn page 1: https://www.linkedin.com/jobs/search?keywords=Data+Science+Data+Scientist&location=&start=0&sortBy=DD&f_TPR=r2592000
+2025-08-20 22:06:28 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:93 - Found 0 jobs on LinkedIn page 1, total: 0
+2025-08-20 22:06:28 | INFO     | src.data_collection.scrapers.linkedin_scraper:search_jobs:103 - No next page found on LinkedIn, ending search

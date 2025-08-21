@@ -1,0 +1,199 @@
+2025-08-20 21:58:07 | INFO     | __main__:test_multi_scraper_with_ai:42 - 🚀 Starting Advanced Job Market Analysis
+2025-08-20 21:58:07 | INFO     | __main__:test_multi_scraper_with_ai:43 - ============================================================
+2025-08-20 21:58:07 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 21:58:08 | INFO     | src.ai_analysis.job_analyzer:__init__:61 - OpenAI client initialized
+2025-08-20 21:58:08 | INFO     | src.ai_analysis.job_analyzer:__init__:68 - Claude client initialized
+2025-08-20 21:58:08 | INFO     | __main__:test_multi_scraper_with_ai:75 - 
+📊 Test Case 1: Senior Data Scientist - Tech Hubs
+2025-08-20 21:58:08 | INFO     | __main__:test_multi_scraper_with_ai:76 - --------------------------------------------------
+2025-08-20 21:58:08 | INFO     | __main__:test_multi_scraper_with_ai:80 - 🔍 Searching Indeed for: Senior Data Scientist, Machine Learning
+2025-08-20 21:58:11 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:58:11 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Senior+Data+Scientist+OR+Machine+Learning&l=San+Francisco%2C+CA&start=0&sort=date
+2025-08-20 21:58:17 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:90 - Found 16 jobs on page 1, total: 16
+2025-08-20 21:58:20 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:110 - Indeed search completed. Found 3 job URLs
+2025-08-20 21:58:20 | INFO     | __main__:test_multi_scraper_with_ai:91 - ✅ Found 3 job URLs
+2025-08-20 21:58:20 | INFO     | __main__:test_multi_scraper_with_ai:94 - 📄 Scraping job details...
+2025-08-20 21:58:20 | INFO     | __main__:test_multi_scraper_with_ai:98 -   Scraping job 1/3
+2025-08-20 21:58:23 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:58:33 | INFO     | __main__:test_multi_scraper_with_ai:98 -   Scraping job 2/3
+2025-08-20 21:58:36 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:58:44 | INFO     | __main__:test_multi_scraper_with_ai:98 -   Scraping job 3/3
+2025-08-20 21:58:48 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:58:51 | WARNING  | src.data_collection.base_scraper:validate_job_posting:192 - Job posting missing required field: company
+2025-08-20 21:58:51 | WARNING  | src.data_collection.scrapers.indeed_scraper:scrape_job_details:190 - Invalid job posting from https://www.indeed.com/viewjob?jk=a1b2c3d4e5f67890
+2025-08-20 21:58:56 | INFO     | __main__:test_multi_scraper_with_ai:117 - ✅ Successfully scraped 2 job details
+2025-08-20 21:58:56 | INFO     | __main__:test_multi_scraper_with_ai:120 - 🤖 Performing AI analysis...
+2025-08-20 21:58:56 | INFO     | __main__:test_multi_scraper_with_ai:123 -   Analyzing job 1/2: Senior Staff Data Scientist, Machine Learning
+2025-08-20 21:58:56 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:91 - Starting comprehensive analysis for: Senior Staff Data Scientist, Machine Learning at SoFi
+2025-08-20 21:59:00 | ERROR    | src.ai_analysis.openai_client:analyze_job_posting:97 - Error analyzing job posting with OpenAI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-08-20 21:59:00 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:100 - OpenAI analysis completed
+2025-08-20 21:59:08 | ERROR    | src.ai_analysis.claude_client:analyze_compensation:83 - Claude compensation analysis failed: CompensationAnalysis.__init__() got an unexpected keyword argument 'salary_explicitly_mentioned'
+2025-08-20 21:59:08 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:114 - Claude compensation analysis completed
+2025-08-20 21:59:17 | ERROR    | src.ai_analysis.claude_client:analyze_requirements_detailed:136 - Claude requirements analysis failed: RequirementAnalysis.__init__() got an unexpected keyword argument 'education'
+2025-08-20 21:59:17 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:117 - Claude requirements analysis completed
+2025-08-20 21:59:24 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:120 - Claude culture analysis completed
+2025-08-20 21:59:24 | INFO     | __main__:test_multi_scraper_with_ai:146 - 📋 Analysis Summary for Senior Staff Data Scientist, Machine Learning:
+2025-08-20 21:59:24 | INFO     | __main__:test_multi_scraper_with_ai:149 -     🎯 Position: Senior Staff Data Scientist, Machine Learning at SoFi
+2025-08-20 21:59:24 | INFO     | __main__:test_multi_scraper_with_ai:149 -     📍 Location: 234 1st St, San Francisco, CA 94105
+2025-08-20 21:59:24 | INFO     | __main__:test_multi_scraper_with_ai:149 -     ⭐ Analysis Quality: Limited
+2025-08-20 21:59:24 | INFO     | __main__:test_multi_scraper_with_ai:149 -     🎲 Confidence: 15.00%
+2025-08-20 21:59:24 | INFO     | __main__:test_multi_scraper_with_ai:149 -     ⚠️  Concerns:
+2025-08-20 21:59:24 | INFO     | __main__:test_multi_scraper_with_ai:149 -       • Salary not disclosed
+2025-08-20 21:59:24 | INFO     | __main__:test_multi_scraper_with_ai:123 -   Analyzing job 2/2: Senior Certinia Solutions Specialist
+2025-08-20 21:59:24 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:91 - Starting comprehensive analysis for: Senior Certinia Solutions Specialist at MMC Corporate
+2025-08-20 21:59:27 | ERROR    | src.ai_analysis.openai_client:analyze_job_posting:97 - Error analyzing job posting with OpenAI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-08-20 21:59:27 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:100 - OpenAI analysis completed
+2025-08-20 21:59:34 | ERROR    | src.ai_analysis.claude_client:analyze_compensation:83 - Claude compensation analysis failed: CompensationAnalysis.__init__() got an unexpected keyword argument 'salary_explicitly_mentioned'
+2025-08-20 21:59:34 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:114 - Claude compensation analysis completed
+2025-08-20 21:59:44 | ERROR    | src.ai_analysis.claude_client:analyze_requirements_detailed:136 - Claude requirements analysis failed: RequirementAnalysis.__init__() got an unexpected keyword argument 'education_requirements'. Did you mean 'education_required'?
+2025-08-20 21:59:44 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:117 - Claude requirements analysis completed
+2025-08-20 21:59:51 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:120 - Claude culture analysis completed
+2025-08-20 21:59:51 | INFO     | __main__:test_multi_scraper_with_ai:146 - 📋 Analysis Summary for Senior Certinia Solutions Specialist:
+2025-08-20 21:59:51 | INFO     | __main__:test_multi_scraper_with_ai:149 -     🎯 Position: Senior Certinia Solutions Specialist at MMC Corporate
+2025-08-20 21:59:51 | INFO     | __main__:test_multi_scraper_with_ai:149 -     📍 Location: 
+2025-08-20 21:59:51 | INFO     | __main__:test_multi_scraper_with_ai:149 -     ⭐ Analysis Quality: Limited
+2025-08-20 21:59:51 | INFO     | __main__:test_multi_scraper_with_ai:149 -     🎲 Confidence: 15.00%
+2025-08-20 21:59:51 | INFO     | __main__:test_multi_scraper_with_ai:149 -     ⚠️  Concerns:
+2025-08-20 21:59:51 | INFO     | __main__:test_multi_scraper_with_ai:149 -       • Salary not disclosed
+2025-08-20 21:59:51 | INFO     | __main__:test_multi_scraper_with_ai:155 - ✅ Completed AI analysis for test case 1
+2025-08-20 21:59:51 | INFO     | __main__:test_multi_scraper_with_ai:75 - 
+📊 Test Case 2: Data Analyst - Remote Opportunities
+2025-08-20 21:59:51 | INFO     | __main__:test_multi_scraper_with_ai:76 - --------------------------------------------------
+2025-08-20 21:59:51 | INFO     | __main__:test_multi_scraper_with_ai:80 - 🔍 Searching Indeed for: Data Analyst, Remote
+2025-08-20 21:59:54 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 21:59:54 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Data+Analyst+OR+Remote&l=&start=0&sort=date
+2025-08-20 22:00:02 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:90 - Found 16 jobs on page 1, total: 16
+2025-08-20 22:00:04 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:110 - Indeed search completed. Found 3 job URLs
+2025-08-20 22:00:04 | INFO     | __main__:test_multi_scraper_with_ai:91 - ✅ Found 3 job URLs
+2025-08-20 22:00:04 | INFO     | __main__:test_multi_scraper_with_ai:94 - 📄 Scraping job details...
+2025-08-20 22:00:04 | INFO     | __main__:test_multi_scraper_with_ai:98 -   Scraping job 1/3
+2025-08-20 22:00:07 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 22:00:16 | INFO     | __main__:test_multi_scraper_with_ai:98 -   Scraping job 2/3
+2025-08-20 22:00:19 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 22:00:29 | INFO     | __main__:test_multi_scraper_with_ai:98 -   Scraping job 3/3
+2025-08-20 22:00:32 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 22:00:39 | INFO     | __main__:test_multi_scraper_with_ai:117 - ✅ Successfully scraped 3 job details
+2025-08-20 22:00:39 | INFO     | __main__:test_multi_scraper_with_ai:120 - 🤖 Performing AI analysis...
+2025-08-20 22:00:39 | INFO     | __main__:test_multi_scraper_with_ai:123 -   Analyzing job 1/3: Remote AI Task Contributor – Work From Home (Flexible Hours)
+2025-08-20 22:00:39 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:91 - Starting comprehensive analysis for: Remote AI Task Contributor – Work From Home (Flexible Hours) at ICAMP
+2025-08-20 22:00:42 | ERROR    | src.ai_analysis.openai_client:analyze_job_posting:97 - Error analyzing job posting with OpenAI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-08-20 22:00:42 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:100 - OpenAI analysis completed
+2025-08-20 22:00:49 | ERROR    | src.ai_analysis.claude_client:analyze_compensation:83 - Claude compensation analysis failed: CompensationAnalysis.__init__() got an unexpected keyword argument 'salary_explicitly_mentioned'
+2025-08-20 22:00:49 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:114 - Claude compensation analysis completed
+2025-08-20 22:00:54 | ERROR    | src.ai_analysis.claude_client:analyze_requirements_detailed:136 - Claude requirements analysis failed: Extra data: line 21 column 1 (char 584)
+2025-08-20 22:00:54 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:117 - Claude requirements analysis completed
+2025-08-20 22:01:02 | ERROR    | src.ai_analysis.claude_client:analyze_company_culture:199 - Error analyzing company culture: Extra data: line 12 column 1 (char 447)
+2025-08-20 22:01:02 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:120 - Claude culture analysis completed
+2025-08-20 22:01:02 | INFO     | __main__:test_multi_scraper_with_ai:146 - 📋 Analysis Summary for Remote AI Task Contributor – Work From Home (Flexible Hours):
+2025-08-20 22:01:02 | INFO     | __main__:test_multi_scraper_with_ai:149 -     🎯 Position: Remote AI Task Contributor – Work From Home (Flexible Hours) at ICAMP
+2025-08-20 22:01:02 | INFO     | __main__:test_multi_scraper_with_ai:149 -     📍 Location: 
+2025-08-20 22:01:02 | INFO     | __main__:test_multi_scraper_with_ai:149 -     ⭐ Analysis Quality: Limited
+2025-08-20 22:01:02 | INFO     | __main__:test_multi_scraper_with_ai:149 -     🎲 Confidence: 15.00%
+2025-08-20 22:01:02 | INFO     | __main__:test_multi_scraper_with_ai:149 -     ⚠️  Concerns:
+2025-08-20 22:01:02 | INFO     | __main__:test_multi_scraper_with_ai:149 -       • Salary not disclosed
+2025-08-20 22:01:02 | INFO     | __main__:test_multi_scraper_with_ai:123 -   Analyzing job 2/3: Data Analyst
+2025-08-20 22:01:02 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:91 - Starting comprehensive analysis for: Data Analyst at Bluesight
+2025-08-20 22:01:04 | ERROR    | src.ai_analysis.openai_client:analyze_job_posting:97 - Error analyzing job posting with OpenAI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-08-20 22:01:04 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:100 - OpenAI analysis completed
+2025-08-20 22:01:10 | ERROR    | src.ai_analysis.claude_client:analyze_compensation:83 - Claude compensation analysis failed: CompensationAnalysis.__init__() got an unexpected keyword argument 'salary_explicitly_mentioned'
+2025-08-20 22:01:10 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:114 - Claude compensation analysis completed
+2025-08-20 22:01:19 | ERROR    | src.ai_analysis.claude_client:analyze_requirements_detailed:136 - Claude requirements analysis failed: RequirementAnalysis.__init__() got an unexpected keyword argument 'education_requirements'. Did you mean 'education_required'?
+2025-08-20 22:01:19 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:117 - Claude requirements analysis completed
+2025-08-20 22:01:26 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:120 - Claude culture analysis completed
+2025-08-20 22:01:26 | INFO     | __main__:test_multi_scraper_with_ai:146 - 📋 Analysis Summary for Data Analyst:
+2025-08-20 22:01:26 | INFO     | __main__:test_multi_scraper_with_ai:149 -     🎯 Position: Data Analyst at Bluesight
+2025-08-20 22:01:26 | INFO     | __main__:test_multi_scraper_with_ai:149 -     📍 Location: 
+2025-08-20 22:01:26 | INFO     | __main__:test_multi_scraper_with_ai:149 -     ⭐ Analysis Quality: Limited
+2025-08-20 22:01:26 | INFO     | __main__:test_multi_scraper_with_ai:149 -     🎲 Confidence: 15.00%
+2025-08-20 22:01:26 | INFO     | __main__:test_multi_scraper_with_ai:149 -     ⚠️  Concerns:
+2025-08-20 22:01:26 | INFO     | __main__:test_multi_scraper_with_ai:149 -       • Salary not disclosed
+2025-08-20 22:01:26 | INFO     | __main__:test_multi_scraper_with_ai:123 -   Analyzing job 3/3: Sr Analyst-Advanced Analytics & BI
+2025-08-20 22:01:26 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:91 - Starting comprehensive analysis for: Sr Analyst-Advanced Analytics & BI at Disney Experiences
+2025-08-20 22:01:31 | ERROR    | src.ai_analysis.openai_client:analyze_job_posting:97 - Error analyzing job posting with OpenAI: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-08-20 22:01:57 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:100 - OpenAI analysis completed
+2025-08-20 22:02:04 | ERROR    | src.ai_analysis.claude_client:analyze_compensation:83 - Claude compensation analysis failed: CompensationAnalysis.__init__() got an unexpected keyword argument 'salary_range_mentioned'. Did you mean 'salary_mentioned'?
+2025-08-20 22:02:04 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:114 - Claude compensation analysis completed
+2025-08-20 22:02:12 | ERROR    | src.ai_analysis.claude_client:analyze_requirements_detailed:136 - Claude requirements analysis failed: RequirementAnalysis.__init__() got an unexpected keyword argument 'education'
+2025-08-20 22:02:12 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:117 - Claude requirements analysis completed
+2025-08-20 22:02:20 | ERROR    | src.ai_analysis.claude_client:analyze_company_culture:199 - Error analyzing company culture: Extra data: line 34 column 1 (char 918)
+2025-08-20 22:02:20 | INFO     | src.ai_analysis.job_analyzer:analyze_job_comprehensive:120 - Claude culture analysis completed
+2025-08-20 22:02:20 | INFO     | __main__:test_multi_scraper_with_ai:146 - 📋 Analysis Summary for Sr Analyst-Advanced Analytics & BI:
+2025-08-20 22:02:20 | INFO     | __main__:test_multi_scraper_with_ai:149 -     🎯 Position: Sr Analyst-Advanced Analytics & BI at Disney Experiences
+2025-08-20 22:02:20 | INFO     | __main__:test_multi_scraper_with_ai:149 -     📍 Location: 
+2025-08-20 22:02:20 | INFO     | __main__:test_multi_scraper_with_ai:149 -     ⭐ Analysis Quality: Limited
+2025-08-20 22:02:20 | INFO     | __main__:test_multi_scraper_with_ai:149 -     🎲 Confidence: 15.00%
+2025-08-20 22:02:20 | INFO     | __main__:test_multi_scraper_with_ai:149 -     ⚠️  Concerns:
+2025-08-20 22:02:20 | INFO     | __main__:test_multi_scraper_with_ai:149 -       • Salary not disclosed
+2025-08-20 22:02:20 | INFO     | __main__:test_multi_scraper_with_ai:155 - ✅ Completed AI analysis for test case 2
+2025-08-20 22:02:20 | INFO     | __main__:test_multi_scraper_with_ai:75 - 
+📊 Test Case 3: Business Intelligence - Financial Services
+2025-08-20 22:02:20 | INFO     | __main__:test_multi_scraper_with_ai:76 - --------------------------------------------------
+2025-08-20 22:02:20 | INFO     | __main__:test_multi_scraper_with_ai:80 - 🔍 Searching Indeed for: Business Intelligence, SQL, Tableau
+2025-08-20 22:02:24 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 22:02:24 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Business+Intelligence+OR+SQL+OR+Tableau&l=New+York%2C+NY&start=0&sort=date
+2025-08-20 22:02:29 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:90 - Found 16 jobs on page 1, total: 16
+2025-08-20 22:02:31 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:110 - Indeed search completed. Found 2 job URLs
+2025-08-20 22:02:31 | INFO     | __main__:test_multi_scraper_with_ai:91 - ✅ Found 2 job URLs
+2025-08-20 22:02:31 | INFO     | __main__:test_multi_scraper_with_ai:94 - 📄 Scraping job details...
+2025-08-20 22:02:31 | INFO     | __main__:test_multi_scraper_with_ai:98 -   Scraping job 1/2
+2025-08-20 22:02:35 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 22:02:39 | WARNING  | src.data_collection.base_scraper:validate_job_posting:192 - Job posting missing required field: company
+2025-08-20 22:02:39 | WARNING  | src.data_collection.scrapers.indeed_scraper:scrape_job_details:190 - Invalid job posting from https://www.indeed.com/viewjob?jk=41252106ff6949a9
+2025-08-20 22:02:44 | INFO     | __main__:test_multi_scraper_with_ai:98 -   Scraping job 2/2
+2025-08-20 22:02:48 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 22:02:54 | WARNING  | src.data_collection.base_scraper:validate_job_posting:192 - Job posting missing required field: company
+2025-08-20 22:02:54 | WARNING  | src.data_collection.scrapers.indeed_scraper:scrape_job_details:190 - Invalid job posting from https://www.indeed.com/viewjob?jk=d10712c881829429
+2025-08-20 22:02:59 | INFO     | __main__:test_multi_scraper_with_ai:117 - ✅ Successfully scraped 0 job details
+2025-08-20 22:02:59 | INFO     | __main__:test_multi_scraper_with_ai:120 - 🤖 Performing AI analysis...
+2025-08-20 22:02:59 | INFO     | __main__:test_multi_scraper_with_ai:155 - ✅ Completed AI analysis for test case 3
+2025-08-20 22:02:59 | INFO     | __main__:test_multi_scraper_with_ai:162 - 
+📈 Market Analysis & Insights
+2025-08-20 22:02:59 | INFO     | __main__:test_multi_scraper_with_ai:163 - ==================================================
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:172 - 🎯 Market Insights:
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:176 -   💰 Salary Analysis:
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:178 -     min_salary: Unable to determine - no salary data provided
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:178 -     max_salary: Unable to determine - no salary data provided
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:178 -     average_estimate: Unable to determine - no salary data provided
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:178 -     location_premium: Only SF location specified for SoFi position
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:180 -   🛠️  Skills Analysis:
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:182 -     most_common: ['Data analysis', 'Analytics tools', 'Business intelligence']
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:182 -     emerging_trends: ['Machine Learning', 'AI', 'Remote work capabilities']
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:182 -     rare_valuable: ['Senior Staff level ML expertise (SoFi)', 'Certinia solutions specialization (MMC)', 'Disney business domain knowledge']
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:184 -   📊 Market Trends:
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:186 -     • Strong presence of remote work opportunities
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:186 -     • Mix of traditional (Disney) and tech (SoFi) companies hiring
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:186 -     • Increasing demand for AI/ML specialists
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:186 -     • Various levels from analyst to senior staff positions
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:186 -     • Focus on flexible work arrangements
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:188 -   🎯 Recommendations:
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:190 -     • Develop AI/ML skills as they appear across multiple roles
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:190 -     • Consider remote positions for more opportunities
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:190 -     • Focus on both technical and business analytics skills
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:190 -     • Look for roles at both tech companies and traditional enterprises
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:190 -     • Build expertise in specialized domains (finance, entertainment, healthcare)
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:196 - 
+💾 Exporting Results
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:197 - ------------------------------
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:223 - ✅ Full analysis exported to: data\results\ai_enhanced_analysis_20250820_220309.json
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:259 - ✅ Summary report exported to: data\results\analysis_summary_20250820_220309.json
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:265 - 
+🎉 Analysis Complete!
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:266 - ========================================
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:267 - 📊 Jobs Analyzed: 5
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:271 - 🎲 Average Confidence: 15.00%
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:279 - ⭐ Quality Breakdown:
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:281 -   Limited: 5
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:283 - 
+🚀 Ready for Phase 3: Data Visualization & Analytics!
+2025-08-20 22:03:09 | INFO     | __main__:test_multi_scraper_with_ai:284 - Next steps: Build dashboards and statistical analysis
+2025-08-20 22:04:26 | INFO     | __main__:test_multi_scraper_with_ai:42 - 🚀 Starting Advanced Job Market Analysis
+2025-08-20 22:04:26 | INFO     | __main__:test_multi_scraper_with_ai:43 - ============================================================
+2025-08-20 22:04:26 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 22:04:27 | INFO     | src.ai_analysis.job_analyzer:__init__:61 - OpenAI client initialized
+2025-08-20 22:04:27 | INFO     | src.ai_analysis.job_analyzer:__init__:68 - Claude client initialized
+2025-08-20 22:04:27 | INFO     | __main__:test_multi_scraper_with_ai:75 - 
+📊 Test Case 1: Senior Data Scientist - Tech Hubs
+2025-08-20 22:04:27 | INFO     | __main__:test_multi_scraper_with_ai:76 - --------------------------------------------------
+2025-08-20 22:04:27 | INFO     | __main__:test_multi_scraper_with_ai:80 - 🔍 Searching Indeed for: Senior Data Scientist, Machine Learning
+2025-08-20 22:04:30 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 22:04:30 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Senior+Data+Scientist+OR+Machine+Learning&l=San+Francisco%2C+CA&start=0&sort=date
