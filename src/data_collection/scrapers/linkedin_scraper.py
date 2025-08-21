@@ -21,8 +21,8 @@ class LinkedInScraper(BaseScraper):
     def __init__(self):
         super().__init__("LinkedIn", "https://www.linkedin.com")
         self.search_url = f"{self.base_url}/jobs/search"
-    
-    def search_jobs(self, keywords: List[str], location: str = "Data Analyst"", limit: int = 100) -> List[str]:
+
+    def search_jobs(self, keywords: List[str], location: str = "United States", limit: int = 1000) -> List[str]:
         """Search for jobs on LinkedIn and return job URLs."""
         job_urls = []
         query = " ".join(keywords)  # LinkedIn uses space-separated keywords
