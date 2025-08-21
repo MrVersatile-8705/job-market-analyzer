@@ -70,3 +70,143 @@ Backtrace:
 2025-08-20 19:11:04 | INFO     | __main__:test_indeed_scraper:46 -   Description (first 500 chars): JOB TITLE: Data AnalystJOB DESCRIPTION: Responsible for supporting Federal Aviation Administrative (FAA) initiatives through dataanalytics that involve the following duties:Software development and database management, with responsibilities including: utilizing Python, Java and/or high-level languages such as C#, C++ in database; utilizing FAA flight and trajectory databases such as Aviation System Performance Metrics (ASPM), Traffic Flow Management System (TFMS), Performance Data Analysis and R...
 2025-08-20 19:11:21 | INFO     | data_collection.base_scraper:cleanup:201 - WebDriver closed for Indeed
 2025-08-20 19:11:21 | INFO     | data_collection.base_scraper:cleanup:205 - Session closed for Indeed
+2025-08-20 19:12:46 | INFO     | __main__:comprehensive_test:52 - Starting comprehensive job scraper test
+2025-08-20 19:12:46 | INFO     | __main__:comprehensive_test:73 - 
+--- Test Case 1: Remote Data/Business Analyst positions ---
+2025-08-20 19:12:46 | INFO     | data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 19:12:46 | INFO     | data_collection.base_scraper:scrape_jobs:159 - Starting to scrape Indeed for keywords: ['data analyst', 'business analyst'], location: Remote, limit: 5
+2025-08-20 19:12:50 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:12:50 | INFO     | data_collection.scrapers.indeed_scraper:search_jobs:46 - Searching Indeed page 1: https://www.indeed.com/jobs?q=data+analyst+OR+business+analyst&l=Remote&start=0&sort=date
+2025-08-20 19:12:52 | DEBUG    | data_collection.base_scraper:random_delay:120 - Sleeping for 3.32 seconds
+2025-08-20 19:12:56 | INFO     | data_collection.scrapers.indeed_scraper:search_jobs:79 - Found 16 jobs on page 1, total: 16
+2025-08-20 19:12:58 | INFO     | data_collection.scrapers.indeed_scraper:search_jobs:99 - Indeed search completed. Found 5 job URLs
+2025-08-20 19:12:58 | INFO     | data_collection.base_scraper:scrape_jobs:163 - Found 5 job URLs from Indeed
+2025-08-20 19:12:58 | INFO     | data_collection.base_scraper:scrape_jobs:168 - Scraping job 1/5: https://www.indeed.com/viewjob?jk=70e75f78f473edc5
+2025-08-20 19:13:02 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:13:03 | DEBUG    | data_collection.base_scraper:random_delay:120 - Sleeping for 2.30 seconds
+2025-08-20 19:13:08 | DEBUG    | data_collection.base_scraper:scrape_jobs:174 - Successfully scraped job: Data Analyst at CSSI, Inc.
+2025-08-20 19:13:08 | DEBUG    | data_collection.base_scraper:random_delay:120 - Sleeping for 1.47 seconds
+2025-08-20 19:13:09 | INFO     | data_collection.base_scraper:scrape_jobs:168 - Scraping job 2/5: https://www.indeed.com/viewjob?jk=a7bfdf80d62d00c7
+2025-08-20 19:13:13 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:13:14 | DEBUG    | data_collection.base_scraper:random_delay:120 - Sleeping for 2.76 seconds
+2025-08-20 19:13:19 | DEBUG    | data_collection.base_scraper:scrape_jobs:174 - Successfully scraped job: Data Analyst I at PatientIQ
+2025-08-20 19:13:19 | DEBUG    | data_collection.base_scraper:random_delay:120 - Sleeping for 2.17 seconds
+2025-08-20 19:13:21 | INFO     | data_collection.base_scraper:scrape_jobs:168 - Scraping job 3/5: https://www.indeed.com/viewjob?jk=631ded563098fb71
+2025-08-20 19:13:24 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:13:26 | DEBUG    | data_collection.base_scraper:random_delay:120 - Sleeping for 3.67 seconds
+2025-08-20 19:13:32 | DEBUG    | data_collection.base_scraper:scrape_jobs:174 - Successfully scraped job: Business Analyst at WWEX Group
+2025-08-20 19:13:32 | DEBUG    | data_collection.base_scraper:random_delay:120 - Sleeping for 2.78 seconds
+2025-08-20 19:13:34 | INFO     | data_collection.base_scraper:scrape_jobs:168 - Scraping job 4/5: https://www.indeed.com/viewjob?jk=60ad73e0a9a15dae
+2025-08-20 19:13:38 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:13:39 | DEBUG    | data_collection.base_scraper:random_delay:120 - Sleeping for 3.00 seconds
+2025-08-20 19:13:44 | DEBUG    | data_collection.base_scraper:scrape_jobs:174 - Successfully scraped job: Business Analyst at Link Technologies
+2025-08-20 19:13:44 | DEBUG    | data_collection.base_scraper:random_delay:120 - Sleeping for 1.52 seconds
+2025-08-20 19:13:46 | INFO     | data_collection.base_scraper:scrape_jobs:168 - Scraping job 5/5: https://www.indeed.com/viewjob?jk=cc1477bde42d82fd
+2025-08-20 19:13:49 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:13:50 | DEBUG    | data_collection.base_scraper:random_delay:120 - Sleeping for 3.92 seconds
+2025-08-20 19:13:56 | DEBUG    | data_collection.base_scraper:scrape_jobs:174 - Successfully scraped job: Senior Data Analyst at The Helper Bees
+2025-08-20 19:13:56 | INFO     | data_collection.base_scraper:scrape_jobs:182 - Successfully scraped 5 jobs from Indeed
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:83 - Successfully scraped 5 jobs
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:87 - 
+Job 1:
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:88 -   Title: Data Analyst
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:89 -   Company: CSSI, Inc.
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:90 -   Location: 
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:91 -   Remote: True
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:92 -   Salary: None
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:93 -   URL: https://www.indeed.com/viewjob?jk=70e75f78f473edc5
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:87 - 
+Job 2:
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:88 -   Title: Data Analyst I
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:89 -   Company: PatientIQ
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:90 -   Location: 
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:91 -   Remote: True
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:92 -   Salary: None
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:93 -   URL: https://www.indeed.com/viewjob?jk=a7bfdf80d62d00c7
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:87 - 
+Job 3:
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:88 -   Title: Business Analyst
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:89 -   Company: WWEX Group
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:90 -   Location: 
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:91 -   Remote: False
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:92 -   Salary: None
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:93 -   URL: https://www.indeed.com/viewjob?jk=631ded563098fb71
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:87 - 
+Job 4:
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:88 -   Title: Business Analyst
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:89 -   Company: Link Technologies
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:90 -   Location: 
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:91 -   Remote: True
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:92 -   Salary: None
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:93 -   URL: https://www.indeed.com/viewjob?jk=60ad73e0a9a15dae
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:87 - 
+Job 5:
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:88 -   Title: Senior Data Analyst
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:89 -   Company: The Helper Bees
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:90 -   Location: 
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:91 -   Remote: True
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:92 -   Salary: None
+2025-08-20 19:13:56 | INFO     | __main__:comprehensive_test:93 -   URL: https://www.indeed.com/viewjob?jk=cc1477bde42d82fd
+2025-08-20 19:14:13 | INFO     | data_collection.base_scraper:cleanup:201 - WebDriver closed for Indeed
+2025-08-20 19:14:13 | INFO     | data_collection.base_scraper:cleanup:205 - Session closed for Indeed
+2025-08-20 19:14:13 | INFO     | __main__:comprehensive_test:73 - 
+--- Test Case 2: NYC Data Science positions ---
+2025-08-20 19:14:13 | INFO     | data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 19:14:13 | INFO     | data_collection.base_scraper:scrape_jobs:159 - Starting to scrape Indeed for keywords: ['data scientist', 'machine learning engineer'], location: New York, NY, limit: 3
+2025-08-20 19:14:16 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:14:16 | INFO     | data_collection.scrapers.indeed_scraper:search_jobs:46 - Searching Indeed page 1: https://www.indeed.com/jobs?q=data+scientist+OR+machine+learning+engineer&l=New+York%2C+NY&start=0&sort=date
+2025-08-20 19:14:18 | DEBUG    | data_collection.base_scraper:random_delay:120 - Sleeping for 3.68 seconds
+2025-08-20 19:14:22 | INFO     | data_collection.scrapers.indeed_scraper:search_jobs:79 - Found 16 jobs on page 1, total: 16
+2025-08-20 19:14:24 | INFO     | data_collection.scrapers.indeed_scraper:search_jobs:99 - Indeed search completed. Found 3 job URLs
+2025-08-20 19:14:24 | INFO     | data_collection.base_scraper:scrape_jobs:163 - Found 3 job URLs from Indeed
+2025-08-20 19:14:24 | INFO     | data_collection.base_scraper:scrape_jobs:168 - Scraping job 1/3: https://www.indeed.com/viewjob?jk=355637d884e67d93
+2025-08-20 19:14:28 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:14:29 | DEBUG    | data_collection.base_scraper:random_delay:120 - Sleeping for 3.65 seconds
+2025-08-20 19:14:35 | DEBUG    | data_collection.base_scraper:scrape_jobs:174 - Successfully scraped job: Lead Machine Learning Engineer at Capital One
+2025-08-20 19:14:35 | DEBUG    | data_collection.base_scraper:random_delay:120 - Sleeping for 1.91 seconds
+2025-08-20 19:14:37 | INFO     | data_collection.base_scraper:scrape_jobs:168 - Scraping job 2/3: https://www.indeed.com/viewjob?jk=66968cc39308a02c
+2025-08-20 19:14:40 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:14:41 | DEBUG    | data_collection.base_scraper:random_delay:120 - Sleeping for 2.85 seconds
+2025-08-20 19:14:46 | DEBUG    | data_collection.base_scraper:scrape_jobs:174 - Successfully scraped job: Machine Learning Engineer, Generative AI Innovation Center - Model Customization at Amazon Web Services, Inc.
+2025-08-20 19:14:46 | DEBUG    | data_collection.base_scraper:random_delay:120 - Sleeping for 2.29 seconds
+2025-08-20 19:14:48 | INFO     | data_collection.base_scraper:scrape_jobs:168 - Scraping job 3/3: https://www.indeed.com/viewjob?jk=c4befa21c3963be3
+2025-08-20 19:14:52 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:14:53 | DEBUG    | data_collection.base_scraper:random_delay:120 - Sleeping for 3.34 seconds
+2025-08-20 19:14:59 | DEBUG    | data_collection.base_scraper:scrape_jobs:174 - Successfully scraped job: Sr. Research Engineer, Machine Learning, AGI Foundations at Amazon.com Services LLC
+2025-08-20 19:14:59 | INFO     | data_collection.base_scraper:scrape_jobs:182 - Successfully scraped 3 jobs from Indeed
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:83 - Successfully scraped 3 jobs
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:87 - 
+Job 1:
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:88 -   Title: Lead Machine Learning Engineer
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:89 -   Company: Capital One
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:90 -   Location: 501 Broadway, New York, NY 10012
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:91 -   Remote: False
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:92 -   Salary: None
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:93 -   URL: https://www.indeed.com/viewjob?jk=355637d884e67d93
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:87 - 
+Job 2:
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:88 -   Title: Machine Learning Engineer, Generative AI Innovation Center - Model Customization
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:89 -   Company: Amazon Web Services, Inc.
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:90 -   Location: 
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:91 -   Remote: False
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:92 -   Salary: None
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:93 -   URL: https://www.indeed.com/viewjob?jk=66968cc39308a02c
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:87 - 
+Job 3:
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:88 -   Title: Sr. Research Engineer, Machine Learning, AGI Foundations
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:89 -   Company: Amazon.com Services LLC
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:90 -   Location: 
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:91 -   Remote: False
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:92 -   Salary: None
+2025-08-20 19:14:59 | INFO     | __main__:comprehensive_test:93 -   URL: https://www.indeed.com/viewjob?jk=c4befa21c3963be3
+2025-08-20 19:15:15 | INFO     | data_collection.base_scraper:cleanup:201 - WebDriver closed for Indeed
+2025-08-20 19:15:15 | INFO     | data_collection.base_scraper:cleanup:205 - Session closed for Indeed
+2025-08-20 19:15:15 | INFO     | __main__:save_jobs_to_json:47 - Saved 8 jobs to data\raw\scraped_jobs.json
+2025-08-20 19:15:15 | INFO     | __main__:comprehensive_test:105 - 
+--- SUMMARY STATISTICS ---
+2025-08-20 19:15:15 | INFO     | __main__:comprehensive_test:106 - Total jobs scraped: 8
+2025-08-20 19:15:15 | INFO     | __main__:comprehensive_test:112 - Jobs by source: {'Indeed': 8}
+2025-08-20 19:15:15 | INFO     | __main__:comprehensive_test:116 - Remote jobs: 4/8 (50.0%)
+2025-08-20 19:15:15 | INFO     | __main__:comprehensive_test:120 - Jobs with salary info: 0/8 (0.0%)
+2025-08-20 19:15:15 | INFO     | __main__:comprehensive_test:122 - 
+Data saved to: D:\repo\Data Analyst Job Research Model\job-market-analyzer\data\raw\scraped_jobs.json

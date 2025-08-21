@@ -20,7 +20,7 @@ from loguru import logger
 try:
     # Try different import paths based on how the script is being executed
     try:
-        from ...config.settings import settings  # When executed as part of the package
+        from sqaZ import settings  # When executed as part of the package
     except ImportError:
         try:
             from ..config.settings import settings  # If config is one level up

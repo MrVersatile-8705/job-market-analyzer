@@ -20,3 +20,39 @@
 2025-08-20 19:10:58 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
 2025-08-20 19:11:21 | INFO     | data_collection.base_scraper:cleanup:201 - WebDriver closed for Indeed
 2025-08-20 19:11:21 | INFO     | data_collection.base_scraper:cleanup:205 - Session closed for Indeed
+2025-08-20 19:12:46 | INFO     | data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 19:12:46 | INFO     | data_collection.base_scraper:scrape_jobs:159 - Starting to scrape Indeed for keywords: ['data analyst', 'business analyst'], location: Remote, limit: 5
+2025-08-20 19:12:50 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:12:50 | INFO     | data_collection.scrapers.indeed_scraper:search_jobs:46 - Searching Indeed page 1: https://www.indeed.com/jobs?q=data+analyst+OR+business+analyst&l=Remote&start=0&sort=date
+2025-08-20 19:12:56 | INFO     | data_collection.scrapers.indeed_scraper:search_jobs:79 - Found 16 jobs on page 1, total: 16
+2025-08-20 19:12:58 | INFO     | data_collection.scrapers.indeed_scraper:search_jobs:99 - Indeed search completed. Found 5 job URLs
+2025-08-20 19:12:58 | INFO     | data_collection.base_scraper:scrape_jobs:163 - Found 5 job URLs from Indeed
+2025-08-20 19:12:58 | INFO     | data_collection.base_scraper:scrape_jobs:168 - Scraping job 1/5: https://www.indeed.com/viewjob?jk=70e75f78f473edc5
+2025-08-20 19:13:02 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:13:09 | INFO     | data_collection.base_scraper:scrape_jobs:168 - Scraping job 2/5: https://www.indeed.com/viewjob?jk=a7bfdf80d62d00c7
+2025-08-20 19:13:13 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:13:21 | INFO     | data_collection.base_scraper:scrape_jobs:168 - Scraping job 3/5: https://www.indeed.com/viewjob?jk=631ded563098fb71
+2025-08-20 19:13:24 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:13:34 | INFO     | data_collection.base_scraper:scrape_jobs:168 - Scraping job 4/5: https://www.indeed.com/viewjob?jk=60ad73e0a9a15dae
+2025-08-20 19:13:38 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:13:46 | INFO     | data_collection.base_scraper:scrape_jobs:168 - Scraping job 5/5: https://www.indeed.com/viewjob?jk=cc1477bde42d82fd
+2025-08-20 19:13:49 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:13:56 | INFO     | data_collection.base_scraper:scrape_jobs:182 - Successfully scraped 5 jobs from Indeed
+2025-08-20 19:14:13 | INFO     | data_collection.base_scraper:cleanup:201 - WebDriver closed for Indeed
+2025-08-20 19:14:13 | INFO     | data_collection.base_scraper:cleanup:205 - Session closed for Indeed
+2025-08-20 19:14:13 | INFO     | data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 19:14:13 | INFO     | data_collection.base_scraper:scrape_jobs:159 - Starting to scrape Indeed for keywords: ['data scientist', 'machine learning engineer'], location: New York, NY, limit: 3
+2025-08-20 19:14:16 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:14:16 | INFO     | data_collection.scrapers.indeed_scraper:search_jobs:46 - Searching Indeed page 1: https://www.indeed.com/jobs?q=data+scientist+OR+machine+learning+engineer&l=New+York%2C+NY&start=0&sort=date
+2025-08-20 19:14:22 | INFO     | data_collection.scrapers.indeed_scraper:search_jobs:79 - Found 16 jobs on page 1, total: 16
+2025-08-20 19:14:24 | INFO     | data_collection.scrapers.indeed_scraper:search_jobs:99 - Indeed search completed. Found 3 job URLs
+2025-08-20 19:14:24 | INFO     | data_collection.base_scraper:scrape_jobs:163 - Found 3 job URLs from Indeed
+2025-08-20 19:14:24 | INFO     | data_collection.base_scraper:scrape_jobs:168 - Scraping job 1/3: https://www.indeed.com/viewjob?jk=355637d884e67d93
+2025-08-20 19:14:28 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:14:37 | INFO     | data_collection.base_scraper:scrape_jobs:168 - Scraping job 2/3: https://www.indeed.com/viewjob?jk=66968cc39308a02c
+2025-08-20 19:14:40 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:14:48 | INFO     | data_collection.base_scraper:scrape_jobs:168 - Scraping job 3/3: https://www.indeed.com/viewjob?jk=c4befa21c3963be3
+2025-08-20 19:14:52 | INFO     | data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 19:14:59 | INFO     | data_collection.base_scraper:scrape_jobs:182 - Successfully scraped 3 jobs from Indeed
+2025-08-20 19:15:15 | INFO     | data_collection.base_scraper:cleanup:201 - WebDriver closed for Indeed
+2025-08-20 19:15:15 | INFO     | data_collection.base_scraper:cleanup:205 - Session closed for Indeed

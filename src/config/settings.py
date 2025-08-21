@@ -15,8 +15,9 @@ class Settings:
         self.database_url_dev = os.getenv("DATABASE_URL_DEV", "sqlite:///data/job_market_dev.db")
         
         # API Keys
-        self.openai_api_key = os.getenv("OPENAI_API_KEY")
-        self.anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
+        self.OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+        self.CLAUDE_API_KEY = os.getenv("CLAUDE_API_KEY")
+        self.ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")  # Legacy support
         
         # Scraping settings
         self.scraping_delay_min = int(os.getenv("SCRAPING_DELAY_MIN", "1"))
