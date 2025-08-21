@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "timestamp": "2025-08-20T22:41:36.306159",
+    "analysis_type": "enhanced_large_scale",
+    "total_jobs_collected": 0,
+    "processing_time_minutes": 1.5,
+    "ai_analysis_enabled": false,
+    "ai_success_rate": 0,
+    "collection_period": "past_30_days"
+  },
+  "summary_statistics": {
+    "total_jobs": 0,
+    "ai_analyzed_jobs": 0,
+    "unique_companies": 0,
+    "unique_skills_identified": 0,
+    "unique_industries": 0,
+    "jobs_with_salary_data": 0,
+    "remote_jobs": 0
+  },
+  "jobs": []
+}

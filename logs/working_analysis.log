@@ -1,0 +1,50 @@
+2025-08-20 22:45:41 | INFO     | __main__:working_job_analysis:38 - 🚀 Working Large-Scale Job Market Analysis
+2025-08-20 22:45:41 | INFO     | __main__:working_job_analysis:39 - Using proven keywords from successful tests
+2025-08-20 22:45:41 | INFO     | __main__:working_job_analysis:40 - ============================================================
+2025-08-20 22:45:41 | INFO     | __main__:working_job_analysis:43 - 🤖 Initializing AI components...
+2025-08-20 22:45:41 | INFO     | src.ai_analysis.job_analyzer:__init__:61 - OpenAI client initialized
+2025-08-20 22:45:41 | INFO     | src.ai_analysis.job_analyzer:__init__:68 - Claude client initialized
+2025-08-20 22:45:41 | INFO     | __main__:working_job_analysis:47 - ✅ AI analyzer ready
+2025-08-20 22:45:41 | INFO     | __main__:working_job_analysis:85 - 📊 Target: 100 jobs across 4 scenarios
+2025-08-20 22:45:41 | INFO     | __main__:working_job_analysis:86 - ⏱️ Estimated time: 60-90 minutes
+2025-08-20 22:48:24 | INFO     | __main__:working_job_analysis:99 - 
+📊 Scenario 1/4: Data Analyst - Cleveland Market
+2025-08-20 22:48:24 | INFO     | __main__:working_job_analysis:100 - --------------------------------------------------
+2025-08-20 22:48:24 | INFO     | __main__:process_working_scenario:146 - 🔍 Searching for 25 jobs...
+2025-08-20 22:48:24 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 22:48:27 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 22:48:27 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Data+Analyst&l=Cleveland%2C+OH&start=0&sort=date&fromage=30
+2025-08-20 22:48:41 | WARNING  | src.data_collection.scrapers.indeed_scraper:search_jobs:68 - Timeout waiting for job results on page 1
+2025-08-20 22:48:43 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:110 - Indeed search completed. Found 0 job URLs
+2025-08-20 22:48:43 | WARNING  | __main__:process_working_scenario:157 - No jobs found for Data Analyst - Cleveland Market
+2025-08-20 22:48:43 | INFO     | __main__:process_working_scenario:160 - 🔄 Trying broader search...
+2025-08-20 22:48:46 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 22:48:46 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=analyst&l=Cleveland%2C+OH&start=0&sort=date&fromage=30
+2025-08-20 22:49:00 | WARNING  | src.data_collection.scrapers.indeed_scraper:search_jobs:68 - Timeout waiting for job results on page 1
+2025-08-20 22:49:02 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:110 - Indeed search completed. Found 0 job URLs
+2025-08-20 22:49:02 | WARNING  | __main__:process_working_scenario:171 - No jobs found even with broader search
+2025-08-20 22:49:02 | INFO     | __main__:working_job_analysis:107 - ✅ Scenario 1 completed: 0 jobs | Total: 0
+2025-08-20 22:49:05 | INFO     | __main__:working_job_analysis:99 - 
+📊 Scenario 2/4: Data Analyst - New York Market
+2025-08-20 22:49:05 | INFO     | __main__:working_job_analysis:100 - --------------------------------------------------
+2025-08-20 22:49:05 | INFO     | __main__:process_working_scenario:146 - 🔍 Searching for 25 jobs...
+2025-08-20 22:49:05 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 22:49:08 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 22:49:08 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Data+Analyst&l=New+York%2C+NY&start=0&sort=date&fromage=30
+2025-08-20 22:49:22 | WARNING  | src.data_collection.scrapers.indeed_scraper:search_jobs:68 - Timeout waiting for job results on page 1
+2025-08-20 22:49:24 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:110 - Indeed search completed. Found 0 job URLs
+2025-08-20 22:49:24 | WARNING  | __main__:process_working_scenario:157 - No jobs found for Data Analyst - New York Market
+2025-08-20 22:49:24 | INFO     | __main__:process_working_scenario:160 - 🔄 Trying broader search...
+2025-08-20 22:49:27 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 22:49:27 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=analyst&l=New+York%2C+NY&start=0&sort=date&fromage=30
+2025-08-20 22:49:40 | WARNING  | src.data_collection.scrapers.indeed_scraper:search_jobs:68 - Timeout waiting for job results on page 1
+2025-08-20 22:49:42 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:110 - Indeed search completed. Found 0 job URLs
+2025-08-20 22:49:42 | WARNING  | __main__:process_working_scenario:171 - No jobs found even with broader search
+2025-08-20 22:49:42 | INFO     | __main__:working_job_analysis:107 - ✅ Scenario 2 completed: 0 jobs | Total: 0
+2025-08-20 22:49:45 | INFO     | __main__:working_job_analysis:99 - 
+📊 Scenario 3/4: Data Analyst - Remote Positions
+2025-08-20 22:49:45 | INFO     | __main__:working_job_analysis:100 - --------------------------------------------------
+2025-08-20 22:49:45 | INFO     | __main__:process_working_scenario:146 - 🔍 Searching for 25 jobs...
+2025-08-20 22:49:45 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Indeed scraper
+2025-08-20 22:49:48 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Indeed
+2025-08-20 22:49:48 | INFO     | src.data_collection.scrapers.indeed_scraper:search_jobs:57 - Searching Indeed page 1: https://www.indeed.com/jobs?q=Data+Analyst&l=Remote&start=0&sort=date&fromage=30
