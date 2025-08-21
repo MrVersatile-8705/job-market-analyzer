@@ -104,7 +104,7 @@ class StackOverflowScraper(BaseScraper):
         logger.info(f"Stack Overflow search completed: {len(job_urls)} job URLs found")
         return job_urls[:limit]
     
-    def scrape_job(self, job_url: str) -> Optional[JobPosting]:
+    def scrape_job_details(self, job_url: str) -> Optional[JobPosting]:
         """Scrape detailed job information from a Stack Overflow job URL."""
         
         driver = self.setup_driver(headless=True)
@@ -251,7 +251,7 @@ def scrape_stackoverflow(keywords: List[str] = None, location: str = "", limit: 
     
     jobs = []
     for url in job_urls:
-        job = scraper.scrape_job(url)
+        job = scraper.scrape_job_details(url)
         if job:
             jobs.append(job)
     

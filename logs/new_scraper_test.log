@@ -1,0 +1,128 @@
+2025-08-20 23:55:41 | INFO     | __main__:main:102 - 🚀 Starting New Scraper Validation Tests
+2025-08-20 23:55:41 | INFO     | __main__:main:103 - Timestamp: 2025-08-20 23:55:41
+2025-08-20 23:55:41 | INFO     | __main__:main:104 - ================================================================================
+2025-08-20 23:55:41 | INFO     | __main__:test_scraper:36 - 
+============================================================
+2025-08-20 23:55:41 | INFO     | __main__:test_scraper:37 - 🧪 Testing ZipRecruiter
+2025-08-20 23:55:41 | INFO     | __main__:test_scraper:38 - Keywords: ['Data Analyst']
+2025-08-20 23:55:41 | INFO     | __main__:test_scraper:39 - Location: Remote
+2025-08-20 23:55:41 | INFO     | __main__:test_scraper:40 - Limit: 3
+2025-08-20 23:55:41 | INFO     | __main__:test_scraper:41 - ============================================================
+2025-08-20 23:55:41 | ERROR    | __main__:test_scraper:90 - ❌ ZipRecruiter test failed: Can't instantiate abstract class ZipRecruiterScraper without an implementation for abstract method 'scrape_job_details'
+2025-08-20 23:55:41 | INFO     | __main__:main:147 - ⏱️ Waiting 5 seconds before next test...
+2025-08-20 23:55:46 | INFO     | __main__:test_scraper:36 - 
+============================================================
+2025-08-20 23:55:46 | INFO     | __main__:test_scraper:37 - 🧪 Testing Dice
+2025-08-20 23:55:46 | INFO     | __main__:test_scraper:38 - Keywords: ['Data Scientist']
+2025-08-20 23:55:46 | INFO     | __main__:test_scraper:39 - Location: San Francisco, CA
+2025-08-20 23:55:46 | INFO     | __main__:test_scraper:40 - Limit: 3
+2025-08-20 23:55:46 | INFO     | __main__:test_scraper:41 - ============================================================
+2025-08-20 23:55:46 | ERROR    | __main__:test_scraper:90 - ❌ Dice test failed: Can't instantiate abstract class DiceScraper without an implementation for abstract method 'scrape_job_details'
+2025-08-20 23:55:46 | INFO     | __main__:main:147 - ⏱️ Waiting 5 seconds before next test...
+2025-08-20 23:55:51 | INFO     | __main__:test_scraper:36 - 
+============================================================
+2025-08-20 23:55:51 | INFO     | __main__:test_scraper:37 - 🧪 Testing Stack Overflow Jobs
+2025-08-20 23:55:51 | INFO     | __main__:test_scraper:38 - Keywords: ['Analytics Engineer']
+2025-08-20 23:55:51 | INFO     | __main__:test_scraper:39 - Location: New York, NY
+2025-08-20 23:55:51 | INFO     | __main__:test_scraper:40 - Limit: 2
+2025-08-20 23:55:51 | INFO     | __main__:test_scraper:41 - ============================================================
+2025-08-20 23:55:51 | ERROR    | __main__:test_scraper:90 - ❌ Stack Overflow Jobs test failed: Can't instantiate abstract class StackOverflowScraper without an implementation for abstract method 'scrape_job_details'
+2025-08-20 23:55:51 | INFO     | __main__:main:147 - ⏱️ Waiting 5 seconds before next test...
+2025-08-20 23:55:56 | INFO     | __main__:test_scraper:36 - 
+============================================================
+2025-08-20 23:55:56 | INFO     | __main__:test_scraper:37 - 🧪 Testing Builtin
+2025-08-20 23:55:56 | INFO     | __main__:test_scraper:38 - Keywords: ['BI Developer']
+2025-08-20 23:55:56 | INFO     | __main__:test_scraper:39 - Location: Austin, TX
+2025-08-20 23:55:56 | INFO     | __main__:test_scraper:40 - Limit: 3
+2025-08-20 23:55:56 | INFO     | __main__:test_scraper:41 - ============================================================
+2025-08-20 23:55:56 | ERROR    | __main__:test_scraper:90 - ❌ Builtin test failed: Can't instantiate abstract class BuiltinScraper without an implementation for abstract method 'scrape_job_details'
+2025-08-20 23:55:56 | INFO     | __main__:main:147 - ⏱️ Waiting 5 seconds before next test...
+2025-08-20 23:56:01 | INFO     | __main__:main:153 - 
+================================================================================
+2025-08-20 23:56:01 | INFO     | __main__:main:154 - 📊 FINAL TEST RESULTS SUMMARY
+2025-08-20 23:56:01 | INFO     | __main__:main:155 - ================================================================================
+2025-08-20 23:56:01 | INFO     | __main__:main:161 - ✅ Successful scrapers: 0/4
+2025-08-20 23:56:01 | INFO     | __main__:main:162 - ❌ Failed scrapers: 4
+2025-08-20 23:56:01 | INFO     | __main__:main:163 - 🎯 Total jobs found: 0
+2025-08-20 23:56:01 | INFO     | __main__:main:164 - ⏱️ Total test time: 20.02 seconds
+2025-08-20 23:56:01 | INFO     | __main__:main:169 - 
+ZipRecruiter: ❌ FAILED
+2025-08-20 23:56:01 | INFO     | __main__:main:174 -   Error: Can't instantiate abstract class ZipRecruiterScraper without an implementation for abstract method 'scrape_job_details'
+2025-08-20 23:56:01 | INFO     | __main__:main:169 - 
+Dice: ❌ FAILED
+2025-08-20 23:56:01 | INFO     | __main__:main:174 -   Error: Can't instantiate abstract class DiceScraper without an implementation for abstract method 'scrape_job_details'
+2025-08-20 23:56:01 | INFO     | __main__:main:169 - 
+Stack Overflow Jobs: ❌ FAILED
+2025-08-20 23:56:01 | INFO     | __main__:main:174 -   Error: Can't instantiate abstract class StackOverflowScraper without an implementation for abstract method 'scrape_job_details'
+2025-08-20 23:56:01 | INFO     | __main__:main:169 - 
+Builtin: ❌ FAILED
+2025-08-20 23:56:01 | INFO     | __main__:main:174 -   Error: Can't instantiate abstract class BuiltinScraper without an implementation for abstract method 'scrape_job_details'
+2025-08-20 23:56:01 | INFO     | __main__:main:177 - 
+============================================================
+2025-08-20 23:56:01 | INFO     | __main__:main:178 - 🔧 RECOMMENDATIONS
+2025-08-20 23:56:01 | INFO     | __main__:main:179 - ============================================================
+2025-08-20 23:56:01 | ERROR    | __main__:main:191 - ❌ No scrapers working - check network, dependencies, website changes
+2025-08-20 23:56:01 | INFO     | __main__:main:193 - 
+🏁 Test completed at 2025-08-20 23:56:01
+2025-08-20 23:59:16 | INFO     | __main__:main:102 - 🚀 Starting New Scraper Validation Tests
+2025-08-20 23:59:16 | INFO     | __main__:main:103 - Timestamp: 2025-08-20 23:59:16
+2025-08-20 23:59:16 | INFO     | __main__:main:104 - ================================================================================
+2025-08-20 23:59:16 | INFO     | __main__:test_scraper:36 - 
+============================================================
+2025-08-20 23:59:16 | INFO     | __main__:test_scraper:37 - 🧪 Testing ZipRecruiter
+2025-08-20 23:59:16 | INFO     | __main__:test_scraper:38 - Keywords: ['Data Analyst']
+2025-08-20 23:59:16 | INFO     | __main__:test_scraper:39 - Location: Remote
+2025-08-20 23:59:16 | INFO     | __main__:test_scraper:40 - Limit: 3
+2025-08-20 23:59:16 | INFO     | __main__:test_scraper:41 - ============================================================
+2025-08-20 23:59:16 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized ZipRecruiter scraper
+2025-08-20 23:59:16 | INFO     | __main__:test_scraper:46 - ✅ ZipRecruiter initialized successfully
+2025-08-20 23:59:26 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for ZipRecruiter
+2025-08-20 23:59:26 | INFO     | src.data_collection.scrapers.ziprecruiter_scraper:search_jobs:53 - Searching ZipRecruiter page 1: https://www.ziprecruiter.com/jobs-search?search=Data+Analyst&location=Remote&page=1
+2025-08-20 23:59:41 | WARNING  | src.data_collection.scrapers.ziprecruiter_scraper:search_jobs:62 - No job listings found on page 1
+2025-08-20 23:59:43 | INFO     | src.data_collection.scrapers.ziprecruiter_scraper:search_jobs:102 - ZipRecruiter search completed: 0 job URLs found
+2025-08-20 23:59:43 | INFO     | __main__:test_scraper:54 - 🎯 Found 0 job URLs in 27.87 seconds
+2025-08-20 23:59:43 | WARNING  | __main__:test_scraper:79 - ⚠️ No job URLs found
+2025-08-20 23:59:43 | INFO     | __main__:main:147 - ⏱️ Waiting 5 seconds before next test...
+2025-08-20 23:59:48 | INFO     | __main__:test_scraper:36 - 
+============================================================
+2025-08-20 23:59:48 | INFO     | __main__:test_scraper:37 - 🧪 Testing Dice
+2025-08-20 23:59:48 | INFO     | __main__:test_scraper:38 - Keywords: ['Data Scientist']
+2025-08-20 23:59:48 | INFO     | __main__:test_scraper:39 - Location: San Francisco, CA
+2025-08-20 23:59:48 | INFO     | __main__:test_scraper:40 - Limit: 3
+2025-08-20 23:59:48 | INFO     | __main__:test_scraper:41 - ============================================================
+2025-08-20 23:59:48 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Dice scraper
+2025-08-20 23:59:48 | INFO     | __main__:test_scraper:46 - ✅ Dice initialized successfully
+2025-08-20 23:59:52 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Dice
+2025-08-20 23:59:52 | INFO     | src.data_collection.scrapers.dice_scraper:search_jobs:53 - Searching Dice page 1: https://www.dice.com/jobs?q=Data+Scientist&location=San+Francisco%2C+CA&page=1
+2025-08-21 00:00:03 | WARNING  | src.data_collection.scrapers.dice_scraper:search_jobs:62 - No job listings found on page 1
+2025-08-21 00:00:07 | INFO     | src.data_collection.scrapers.dice_scraper:search_jobs:105 - Dice search completed: 0 job URLs found
+2025-08-21 00:00:07 | INFO     | __main__:test_scraper:54 - 🎯 Found 0 job URLs in 18.07 seconds
+2025-08-21 00:00:07 | WARNING  | __main__:test_scraper:79 - ⚠️ No job URLs found
+2025-08-21 00:00:07 | INFO     | __main__:main:147 - ⏱️ Waiting 5 seconds before next test...
+2025-08-21 00:00:12 | INFO     | __main__:test_scraper:36 - 
+============================================================
+2025-08-21 00:00:12 | INFO     | __main__:test_scraper:37 - 🧪 Testing Stack Overflow Jobs
+2025-08-21 00:00:12 | INFO     | __main__:test_scraper:38 - Keywords: ['Analytics Engineer']
+2025-08-21 00:00:12 | INFO     | __main__:test_scraper:39 - Location: New York, NY
+2025-08-21 00:00:12 | INFO     | __main__:test_scraper:40 - Limit: 2
+2025-08-21 00:00:12 | INFO     | __main__:test_scraper:41 - ============================================================
+2025-08-21 00:00:12 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized StackOverflow scraper
+2025-08-21 00:00:12 | INFO     | __main__:test_scraper:46 - ✅ Stack Overflow Jobs initialized successfully
+2025-08-21 00:00:26 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for StackOverflow
+2025-08-21 00:00:26 | INFO     | src.data_collection.scrapers.stackoverflow_scraper:search_jobs:52 - Searching Stack Overflow page 1: https://stackoverflow.com/jobs?q=Analytics+Engineer&l=New+York%2C+NY&pg=1
+2025-08-21 00:00:39 | WARNING  | src.data_collection.scrapers.stackoverflow_scraper:search_jobs:61 - No job listings found on page 1
+2025-08-21 00:00:41 | INFO     | src.data_collection.scrapers.stackoverflow_scraper:search_jobs:104 - Stack Overflow search completed: 0 job URLs found
+2025-08-21 00:00:41 | INFO     | __main__:test_scraper:54 - 🎯 Found 0 job URLs in 29.87 seconds
+2025-08-21 00:00:41 | WARNING  | __main__:test_scraper:79 - ⚠️ No job URLs found
+2025-08-21 00:00:41 | INFO     | __main__:main:147 - ⏱️ Waiting 5 seconds before next test...
+2025-08-21 00:00:46 | INFO     | __main__:test_scraper:36 - 
+============================================================
+2025-08-21 00:00:46 | INFO     | __main__:test_scraper:37 - 🧪 Testing Builtin
+2025-08-21 00:00:46 | INFO     | __main__:test_scraper:38 - Keywords: ['BI Developer']
+2025-08-21 00:00:46 | INFO     | __main__:test_scraper:39 - Location: Austin, TX
+2025-08-21 00:00:46 | INFO     | __main__:test_scraper:40 - Limit: 3
+2025-08-21 00:00:46 | INFO     | __main__:test_scraper:41 - ============================================================
+2025-08-21 00:00:46 | INFO     | src.data_collection.base_scraper:__init__:86 - Initialized Builtin scraper
+2025-08-21 00:00:46 | INFO     | __main__:test_scraper:46 - ✅ Builtin initialized successfully
+2025-08-21 00:00:50 | INFO     | src.data_collection.base_scraper:setup_driver:112 - WebDriver initialized for Builtin
+2025-08-21 00:00:50 | INFO     | src.data_collection.scrapers.builtin_scraper:search_jobs:73 - Searching Builtin page 1: https://builtin.com/jobs/austin?search=BI+Developer&page=1

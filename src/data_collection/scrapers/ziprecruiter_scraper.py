@@ -102,7 +102,7 @@ class ZipRecruiterScraper(BaseScraper):
         logger.info(f"ZipRecruiter search completed: {len(job_urls)} job URLs found")
         return job_urls[:limit]
     
-    def scrape_job(self, job_url: str) -> Optional[JobPosting]:
+    def scrape_job_details(self, job_url: str) -> Optional[JobPosting]:
         """Scrape detailed job information from a ZipRecruiter job URL."""
         
         driver = self.setup_driver(headless=True)
@@ -236,7 +236,7 @@ def scrape_ziprecruiter(keywords: List[str] = None, location: str = "", limit: i
     
     jobs = []
     for url in job_urls:
-        job = scraper.scrape_job(url)
+        job = scraper.scrape_job_details(url)
         if job:
             jobs.append(job)
     

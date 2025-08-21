@@ -105,7 +105,7 @@ class DiceScraper(BaseScraper):
         logger.info(f"Dice search completed: {len(job_urls)} job URLs found")
         return job_urls[:limit]
     
-    def scrape_job(self, job_url: str) -> Optional[JobPosting]:
+    def scrape_job_details(self, job_url: str) -> Optional[JobPosting]:
         """Scrape detailed job information from a Dice job URL."""
         
         driver = self.setup_driver(headless=True)
@@ -265,7 +265,7 @@ def scrape_dice(keywords: List[str] = None, location: str = "", limit: int = 50)
     
     jobs = []
     for url in job_urls:
-        job = scraper.scrape_job(url)
+        job = scraper.scrape_job_details(url)
         if job:
             jobs.append(job)
     
